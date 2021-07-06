@@ -1,0 +1,52 @@
+* {
+
+    background-color: cornflowerblue;
+}
+
+.title{
+    margin-top: 10;
+    margin: center;
+    font-size: 100px;
+    background-color: cornsilk;
+    border-radius: 25px;
+    text-align: center;
+    width: 39%;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    font-family: cursive;
+}
+
+label{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#whattodo{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20;
+}
+
+
+p{
+    font-family: sans-serif;
+    background-color: cornsilk;
+    border-radius:30px;
+    text-align: center;
+    padding: 10;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-top: 20;
+}
+
