@@ -6,7 +6,7 @@ function List ({setTodoinput, setTodos, todoinput, todos}){
     return(
        <div className = "list">
            <ul>{
-           todos.map((todo) => (<Item task = {todo.task}/>))
+           todos.map((todo) => (<Item text = {todo.text}/>))
            }
            </ul>
        </div>
