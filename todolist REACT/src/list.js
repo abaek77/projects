@@ -1,8 +1,15 @@
 import React from 'react';
+import Form from './form';
+import Item from './item';
 
-const List = () =>{
+function List ({setTodoinput, setTodos, todoinput, todos}){
     return(
-        <h1>dab</h1>
+       <div className = "list">
+           <ul>{
+           todos.map((todo) => (<Item task = {todo.task}/>))
+           }
+           </ul>
+       </div>
     );
 }
 
