@@ -1,10 +1,10 @@
 import React from 'react';
 import List from './list';
 
-function Item({task}){
+function Item({text}){
     return(
         <div className="item">
-        <li>{task}</li>
+        <li>{text}</li>
         <li>sdlkfjsdklfj</li>
         <button>X</button>
     </div>
