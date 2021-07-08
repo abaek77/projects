@@ -1,22 +1,25 @@
 import React from 'react';
+import './App.css';
 
-function Form ({setTodoinput, setTodos, todoinput}) {
+function Form ({setTodoinput, setTodos, todoinput, todos}) {
+    
     function Savetodoinput(event) {
-        console.log(event.target.value)
-        setTodoinput(event.target.value)
-    }
+        console.log(event.target.value);
+        setTodoinput(event.target.value);
+    };
 
-    function Printtodo(event){
+
+    function Objectifytodo (event) {
         event.preventDefault();
-        setTodos([...todos, {completed: false}])
-        
-        
-    }
+        setTodos([...todos, {text: todoinput, completed: false, id: Math.random()*1000000}]);
+        console.log({todos});
+    };
+
 
     return(
         <form>
             <input type="text" className="inputtext" onChange = {Savetodoinput}/>
-            <button onClick={Printtodo}>+</button>
+            <button onClick={Objectifytodo} className="firstbutton">+</button>
         </form>
     );
         
