@@ -1,14 +1,15 @@
 import React from 'react';
-import Form from './form';
 import Item from './item';
+import Form from './form';
+import './App.css';
 
 function List ({setTodoinput, setTodos, todoinput, todos}){
     return(
        <div className = "list">
-           <ul>{
-           todos.map((todo) => (<Item text = {todo.text}/>))
+           <ol>{
+           todos.map((todo) => (<Item text={todo.text} todos={todos} setTodos={setTodos} todo={todo} completion = {todo.completion}/>))
            }
-           </ul>
+           </ol>
        </div>
     );
 }
