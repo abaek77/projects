@@ -1,0 +1,30 @@
+h1{
+    font-family: cursive;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.App{
+
+}
+
+*{
+    text-align: center;
+    background-color: aqua;
+}
+
+ol{
+padding-left: 850px;
+width: 10%;
+
+}
+
+
+input{
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+button{
+    border-radius: 15px;
+}
