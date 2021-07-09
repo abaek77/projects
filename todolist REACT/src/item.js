@@ -8,7 +8,7 @@ function Item({text, setTodos, todos, todo}){
         console.log({todo})
         setTodos(todos.filter((todoitem) => todoitem.id !== todo.id))
         //  if(todos=[""]){
-        //      alert("nice job!")
+        //      alert("You've finished your tasks!")
         //                  }
     }
 
