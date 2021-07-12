@@ -39,7 +39,7 @@ function Form () {
                 setNumInput2((numInput-32)/1.8)
                 setUnit2("Celcius");
                 break;
-            case "select":
+            default:
                 alert("Select a unit");
                 setButtonLockFeature(false);
         }
