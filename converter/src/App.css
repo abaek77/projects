@@ -1,0 +1,36 @@
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+p{
+    background-color: blanchedalmond;
+    padding: 15px;
+}
+input{
+    background-color: #e7e7e7; color: black;
+}
+button{
+    background-color: #e7e7e7; color: black;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+}
+select{
+    background-color: #e7e7e7; color: black;
+}
+h4{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+*{
+    background-color: #8C92AC;
+    padding: 0;
+}
