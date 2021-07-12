@@ -1,64 +1,48 @@
 import React, {useState} from 'react';
+import {debounce} from "lodash";
 
 function Form () {
     
     const [unit, setUnit] = useState("____");
-    var [numInput, setNumInput] = useState(1);
-    var [numInput2, setNumInput2] = useState();
-    var [buttonLockFeature, setButtonLockFeature] = useState(false);
-    var [unit2, setUnit2] = useState("____")
+    const [numInput, setNumInput] = useState(1);
 
-    function handleChangeUnit(event){
-        setUnit(event.target.value);
-        console.log(event.target.value);
-        setButtonLockFeature(false);
-        setUnit2("____");
-        setNumInput2();
+    const handleChangeUnit = ({target: {value}}) => {
+        setUnit(value);
     }
 
-    function handleChangeNum (event){
-        setNumInput(event.target.value);
-        console.log(event.target.value);
-        setButtonLockFeature(false);
+    const handleChangeNum = ({target: {value}}) => {
+        setNumInput(value);
     }
 
-    function numHandler (event){
-        event.preventDefault();
-        setButtonLockFeature(true);
+    const generateResult = () => {
     
         switch(unit){
             case "USD":
-                setNumInput2(numInput*3.829386);
-                setUnit2("PLN");
-                break;
+                return <h4>Converted value from USD to PLN is {numInput*3.829386}</h4>
             case "miles":
-                setNumInput2(numInput*1.60934);
-                setUnit2("kilometers");
-                break;
+                return <h4>Converted value from miles to kilometers is {numInput*1.60934}</h4>
             case "Fahrenheit":
-                setNumInput2((numInput-32)/1.8)
-                setUnit2("Celcius");
-                break;
-            default:
-                alert("Select a unit");
-                setButtonLockFeature(false);
+                return <h4>Converted value from Fahrenheit to Celsius is {(numInput-32)/1.8}</h4>
         }
     }
 
     return(
         <form>
             <select value = {unit} onChange={ handleChangeUnit}>
-                <option >select</option>
+                <option hidden={true}>select</option>
                 <option >miles</option>
                 <option >USD</option>
                 <option >Fahrenheit</option>
             </select>
             <input type="number" value={numInput} onChange={handleChangeNum}/>
-            <button onClick={numHandler} disabled = {buttonLockFeature}>Convert</button>
-            <h4>Converted value from {unit} to {unit2}</h4>
-            <p>{numInput2} {unit2}</p>
+            {unit && numInput ?
+                generateResult()
+                :
+                <h4>Provide some value.</h4>
+            }
         </form>
     );
 }
 
 export default Form;
+
