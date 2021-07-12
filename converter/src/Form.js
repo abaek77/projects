@@ -3,7 +3,7 @@ import {useDebounce} from "use-debounce";
 
 function Form () {
     
-    const [unit, setUnit] = useState("____");
+    const [unit, setUnit] = useState("");
     const [numInput, setNumInput] = useState(1);
     const [numResult] = useDebounce(numInput, 400);
 
