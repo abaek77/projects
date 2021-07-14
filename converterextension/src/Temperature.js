@@ -10,6 +10,7 @@ function Temperature({selectTemperature}) {
 
     const handleChangeNum = ({target:{value}}) => {
         setNumInputTemperature(value);
+        console.log(value);
     }
 
     const generalTranslationNumberHandler = ({target:{value}}) => {
@@ -22,35 +23,35 @@ function Temperature({selectTemperature}) {
 
     const numChangeHandler = (event) => {
         event.preventDefault();
+        console.log(numInputTemperature);
         switch (unit){
             case "Celsius":
                 setNumInputTemperature2(numInputTemperature);
-                console.log("bye");
+                console.log("celsius 1 works");
                 break;
             case "Kelvin":
                 setNumInputTemperature2(numInputTemperature-273);
-                console.log("bye");
+                console.log("kelvin 1 works");
                 break;
             case "Fahrenheit":
                 setNumInputTemperature2((numInputTemperature-32)/1.8);
-                console.log("bye");
+                console.log("fahrenheit 1 works");
                 break;
         }
         switch (unit2){
             case "Celsius":
                 setNumInputTemperature3(numInputTemperature2);
-                console.log("hi");
+                console.log("celsius 2 works");
                 break;
             case "Kelvin":
                 setNumInputTemperature3(numInputTemperature2+273);
-                console.log("hi");
+                console.log("kelvin 2 works");
                 break;
             case "Fahrenheit":
                 setNumInputTemperature3((numInputTemperature2*1.8)+32)
-                console.log("hi");
+                console.log("fahrenheit 2 works");
                 break;
-        }
-        
+        }  
     }
 
     return(
@@ -72,7 +73,7 @@ function Temperature({selectTemperature}) {
         <input type="number" value={numInputTemperature} onChange = {handleChangeNum} />
 
         
-        <button onClick  = {numChangeHandler}>Convert</button>
+        <button onClick  = {numChangeHandler} >Convert</button>
 
     
     <h4>{numInputTemperature3}</h4>
