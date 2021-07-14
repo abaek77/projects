@@ -2,26 +2,23 @@ import React, {useState} from 'react';
 
 function Currency({selectCurrency}) {
 
-    const USD = 1;
-    const Euro = .85;
-    const PLN = 3.88;
-    const ChineseYen = 6.47;
-    const BritishPound = 0.72;
     const [generalTranslationNumber, setGeneralTranslationNumber] = useState();
     const [generalTranslationNumber2, setGeneralTranslationNumber2] = useState();
     
-    const [numInputCurrency, setNumInputCurrency] = useState(0);
-    const [numInputCurrency2, setNumInputCurrency2] = useState(0);
+    const [numInputCurrency, setNumInputCurrency] = useState();
+    const [numInputCurrency2, setNumInputCurrency2] = useState();
 
-    const handleChangeNum = ({target:{value}}) => {
-        setNumInputCurrency(value);
-    }
+
 
     const generalTranslationNumberHandler = ({target:{value}}) => {
         setGeneralTranslationNumber(value);
     }
     const generalTranslationNumberHandler2 = ({target:{value}}) => {
         setGeneralTranslationNumber2(value);
+    }
+
+    const handleChangeNum = ({target:{value}}) => {
+        setNumInputCurrency(value);
     }
 
     const numChangeHandler = (event) => {
@@ -34,23 +31,25 @@ function Currency({selectCurrency}) {
 
     return(
     <form hidden={!selectCurrency} >
+        <h4>Convert</h4>
         <select onChange = {generalTranslationNumberHandler}>
             <option hidden = {true}>select</option>
-            <option value = {USD}>USD</option>
-            <option value = {Euro}>Euro</option>
-            <option value = {PLN}>PLN</option>
-            <option value = {ChineseYen}>Chinese Yen</option>
-            <option value = {BritishPound}>British Pound</option>
+            <option value = {1}>USD</option>
+            <option value = {.85}>Euro</option>
+            <option value = {3.88}>PLN</option>
+            <option value = {6.47}>Chinese Yen</option>
+            <option value = {.72}>British Pound</option>
         </select>
+        <h4>to</h4>
         <select onChange ={generalTranslationNumberHandler2}>
             <option hidden = {true}>select</option>
-            <option value = {USD}>USD</option>
-            <option value = {Euro}>Euro</option>
-            <option value = {PLN}>PLN</option>
-            <option value = {ChineseYen}>Chinese Yen</option>
-            <option value = {BritishPound}>British Pound</option>
+            <option value = {1}>USD</option>
+            <option value = {.85}>Euro</option>
+            <option value = {3.88}>PLN</option>
+            <option value = {6.47}>Chinese Yen</option>
+            <option value = {.72}>British Pound</option>
         </select>
-        <input type="number" value={numInputCurrency} onChange = {handleChangeNum} />
+        <input type="number" value={numInputCurrency}  onChange = {handleChangeNum}/>
         <button onClick  = {numChangeHandler}>Convert</button>
 
     

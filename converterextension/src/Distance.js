@@ -1,21 +1,59 @@
 import React, {useState} from 'react';
 
 function Distance({selectDistance}) {
-    const [distances, setDistances] = useState([]);
+
+    const [generalTranslationNumber, setGeneralTranslationNumber] = useState();
+    const [generalTranslationNumber2, setGeneralTranslationNumber2] = useState();
+    
+    const [numInputDistance, setNumInputDistance] = useState();
+    const [numInputDistance2, setNumInputDistance2] = useState();
+
+    const handleChangeNum = ({target:{value}}) => {
+        setNumInputDistance(value);
+    }
+
+    const generalTranslationNumberHandler = ({target:{value}}) => {
+        setGeneralTranslationNumber(value);
+    }
+    const generalTranslationNumberHandler2 = ({target:{value}}) => {
+        setGeneralTranslationNumber2(value);
+    }
+
+    const numChangeHandler = (event) => {
+        event.preventDefault();
+        return(
+        setNumInputDistance2(generalTranslationNumber2*numInputDistance/generalTranslationNumber)
+        );
+        
+    }
 
     return(
-    <form hidden={!selectDistance}>
-        <select>
+    <form hidden={!selectDistance} >
+        <h4>Convert</h4>
+        <select onChange = {generalTranslationNumberHandler}>
             <option hidden = {true}>select</option>
-            <option>meters</option>
-            <option>feet</option>
-            <option>millimeters</option>
-            <option>inches</option>
-            <option>miles</option>
+            <option value = {1}>meter</option>
+            <option value = {3.28084}>feet</option>
+            <option value = {39.3701}>inches</option>
+            <option value = {1000}>millimeters</option>
+            <option value = {0.000621371}>miles</option>
         </select>
-        <input type="text" />
+        <h4>to</h4>
+        <select onChange ={generalTranslationNumberHandler2}>
+            <option hidden = {true}>select</option>
+            <option value = {1}>meter</option>
+            <option value = {3.28084}>feet</option>
+            <option value = {39.3701}>inches</option>
+            <option value = {1000}>millimeters</option>
+            <option value = {0.000621371}>miles</option>
+        </select>
+        <input type="number" value={numInputDistance} onChange = {handleChangeNum} />
+        <button onClick  = {numChangeHandler}>Convert</button>
+
+    
+    <h4>{numInputDistance2}</h4>
     </form>
     )
-}
+    }
 
 export default Distance;
