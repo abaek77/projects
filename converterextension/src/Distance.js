@@ -2,13 +2,10 @@ import React, {useState} from 'react';
 
 function Distance({selectDistance}) {
 
-<<<<<<< Updated upstream
+
     const [translationNumber, setTranslationNumber] = useState();
     const [translationNumber2, setTranslationNumber2] = useState();
-=======
-    const [translationNumber, settranslationNumber] = useState();
-    const [translationNumber2, settranslationNumber2] = useState();
->>>>>>> Stashed changes
+
     
     const [numInputDistance, setNumInputDistance] = useState();
     const [numInputDistance2, setNumInputDistance2] = useState();
@@ -18,25 +15,17 @@ function Distance({selectDistance}) {
     }
 
     const translationNumberHandler = ({target:{value}}) => {
-<<<<<<< Updated upstream
         setTranslationNumber(value);
     }
     const translationNumberHandler2 = ({target:{value}}) => {
         setTranslationNumber2(value);
-=======
-        settranslationNumber(value);
-    }
-    const translationNumberHandler2 = ({target:{value}}) => {
-        settranslationNumber2(value);
->>>>>>> Stashed changes
     }
 
     const numChangeHandler = (event) => {
         event.preventDefault();
         return(
         setNumInputDistance2(translationNumber2*numInputDistance/translationNumber)
-        );
-        
+        );  
     }
 
     return(
