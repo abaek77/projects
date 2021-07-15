@@ -13,11 +13,11 @@ function Temperature({selectTemperature}) {
         console.log(value);
     }
 
-    const generalTranslationNumberHandler = ({target:{value}}) => {
+    const translationNumberHandler = ({target:{value}}) => {
         setUnit(value);
 
     }
-    const generalTranslationNumberHandler2 = ({target:{value}}) => {
+    const translationNumberHandler2 = ({target:{value}}) => {
         setUnit2(value);
     }
 
@@ -57,14 +57,14 @@ function Temperature({selectTemperature}) {
     return(
     <form hidden={!selectTemperature} >
         <h4>Convert</h4>
-        <select onChange = {generalTranslationNumberHandler} value = {unit}>
+        <select onChange = {translationNumberHandler} value = {unit}>
             <option hidden = {true}>select</option>
             <option >Celsius</option>
             <option >Kelvin</option>
             <option >Fahrenheit</option>
         </select>
         <h4>to</h4>
-        <select onChange ={generalTranslationNumberHandler2} value = {unit2}>
+        <select onChange ={translationNumberHandler2} value = {unit2}>
             <option hidden = {true}>select</option>
             <option >Celsius</option>
             <option >Kelvin</option>
