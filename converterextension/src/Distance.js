@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 
 function Distance({selectDistance}) {
 
-    const [generalTranslationNumber, setGeneralTranslationNumber] = useState();
-    const [generalTranslationNumber2, setGeneralTranslationNumber2] = useState();
+    const [translationNumber, setTranslationNumber] = useState();
+    const [translationNumber2, setTranslationNumber2] = useState();
     
     const [numInputDistance, setNumInputDistance] = useState();
     const [numInputDistance2, setNumInputDistance2] = useState();
@@ -12,17 +12,17 @@ function Distance({selectDistance}) {
         setNumInputDistance(value);
     }
 
-    const generalTranslationNumberHandler = ({target:{value}}) => {
-        setGeneralTranslationNumber(value);
+    const translationNumberHandler = ({target:{value}}) => {
+        setTranslationNumber(value);
     }
-    const generalTranslationNumberHandler2 = ({target:{value}}) => {
-        setGeneralTranslationNumber2(value);
+    const translationNumberHandler2 = ({target:{value}}) => {
+        setTranslationNumber2(value);
     }
 
     const numChangeHandler = (event) => {
         event.preventDefault();
         return(
-        setNumInputDistance2(generalTranslationNumber2*numInputDistance/generalTranslationNumber)
+        setNumInputDistance2(translationNumber2*numInputDistance/translationNumber)
         );
         
     }
@@ -30,7 +30,7 @@ function Distance({selectDistance}) {
     return(
     <form hidden={!selectDistance} >
         <h4>Convert</h4>
-        <select onChange = {generalTranslationNumberHandler}>
+        <select onChange = {translationNumberHandler}>
             <option hidden = {true}>select</option>
             <option value = {1}>meter</option>
             <option value = {3.28084}>feet</option>
@@ -39,7 +39,7 @@ function Distance({selectDistance}) {
             <option value = {0.000621371}>miles</option>
         </select>
         <h4>to</h4>
-        <select onChange ={generalTranslationNumberHandler2}>
+        <select onChange ={translationNumberHandler2}>
             <option hidden = {true}>select</option>
             <option value = {1}>meter</option>
             <option value = {3.28084}>feet</option>
