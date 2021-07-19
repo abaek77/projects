@@ -6,7 +6,7 @@ function Currency({selectCurrency}) {
     const [translationNumber2, settranslationNumber2] = useState();
     
     const [numInputCurrency, setNumInputCurrency] = useState();
-    const [numInputCurrency2, setNumInputCurrency2] = useState();
+
 
 
 
@@ -21,17 +21,17 @@ function Currency({selectCurrency}) {
         setNumInputCurrency(value);
     }
 
-    const numChangeHandler = (event) => {
-        event.preventDefault();
+    const numChangeHandler = () => {
+
         return(
-        setNumInputCurrency2(translationNumber2*numInputCurrency/translationNumber)
+        translationNumber2*numInputCurrency/translationNumber
         );
         
     }
 
     return(
     <form hidden={!selectCurrency} >
-        <h4>Convert</h4>
+        <h3>Convert</h3>
         <select onChange = {translationNumberHandler}>
             <option hidden = {true}>select</option>
             <option value = {1}>USD</option>
@@ -40,7 +40,8 @@ function Currency({selectCurrency}) {
             <option value = {6.47}>Chinese Yen</option>
             <option value = {.72}>British Pound</option>
         </select>
-        <h4>to</h4>
+        <input type="number" value={numInputCurrency}  onChange = {handleChangeNum}/>
+        <h3>to</h3>
         <select onChange ={translationNumberHandler2}>
             <option hidden = {true}>select</option>
             <option value = {1}>USD</option>
@@ -49,11 +50,15 @@ function Currency({selectCurrency}) {
             <option value = {6.47}>Chinese Yen</option>
             <option value = {.72}>British Pound</option>
         </select>
-        <input type="number" value={numInputCurrency}  onChange = {handleChangeNum}/>
-        <button onClick  = {numChangeHandler}>Convert</button>
+        
+        {numInputCurrency && translationNumber && translationNumber2 ?
+        <h3>{numChangeHandler()}</h3>
+        :
+        <h3>Provide more information</h3>
+    }
+
 
     
-    <h4>{numInputCurrency2}</h4>
     </form>
     )
     }

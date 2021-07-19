@@ -2,46 +2,35 @@ import React, {useState} from 'react';
 
 function Distance({selectDistance}) {
 
-<<<<<<< Updated upstream
     const [translationNumber, setTranslationNumber] = useState();
     const [translationNumber2, setTranslationNumber2] = useState();
-=======
-    const [translationNumber, settranslationNumber] = useState();
-    const [translationNumber2, settranslationNumber2] = useState();
->>>>>>> Stashed changes
+
     
     const [numInputDistance, setNumInputDistance] = useState();
-    const [numInputDistance2, setNumInputDistance2] = useState();
+
 
     const handleChangeNum = ({target:{value}}) => {
         setNumInputDistance(value);
     }
 
     const translationNumberHandler = ({target:{value}}) => {
-<<<<<<< Updated upstream
+
         setTranslationNumber(value);
     }
     const translationNumberHandler2 = ({target:{value}}) => {
         setTranslationNumber2(value);
-=======
-        settranslationNumber(value);
-    }
-    const translationNumberHandler2 = ({target:{value}}) => {
-        settranslationNumber2(value);
->>>>>>> Stashed changes
     }
 
-    const numChangeHandler = (event) => {
-        event.preventDefault();
+    const numChangeHandler = () => {
         return(
-        setNumInputDistance2(translationNumber2*numInputDistance/translationNumber)
+        translationNumber2*numInputDistance/translationNumber
         );
         
     }
 
     return(
     <form hidden={!selectDistance} >
-        <h4>Convert</h4>
+        <h3>Convert</h3>
         <select onChange = {translationNumberHandler}>
             <option hidden = {true}>select</option>
             <option value = {1}>meter</option>
@@ -50,7 +39,8 @@ function Distance({selectDistance}) {
             <option value = {1000}>millimeters</option>
             <option value = {0.000621371}>miles</option>
         </select>
-        <h4>to</h4>
+        <input type="number" value={numInputDistance} onChange = {handleChangeNum} />
+        <h3>to</h3>
         <select onChange ={translationNumberHandler2}>
             <option hidden = {true}>select</option>
             <option value = {1}>meter</option>
@@ -59,11 +49,15 @@ function Distance({selectDistance}) {
             <option value = {1000}>millimeters</option>
             <option value = {0.000621371}>miles</option>
         </select>
-        <input type="number" value={numInputDistance} onChange = {handleChangeNum} />
-        <button onClick  = {numChangeHandler}>Convert</button>
+      
+        {numInputDistance && translationNumber && translationNumber2 ?
+        <h3>{numChangeHandler()}</h3>
+        :
+        <h3>Provide more information</h3>
+    }
 
     
-    <h4>{numInputDistance2}</h4>
+    
     </form>
     )
     }
