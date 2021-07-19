@@ -14,7 +14,6 @@ function Distance({selectDistance}) {
     }
 
     const translationNumberHandler = ({target:{value}}) => {
-
         setTranslationNumber(value);
     }
     const translationNumberHandler2 = ({target:{value}}) => {
@@ -24,8 +23,7 @@ function Distance({selectDistance}) {
     const numChangeHandler = () => {
         return(
         translationNumber2*numInputDistance/translationNumber
-        );
-        
+        );  
     }
 
     return(
