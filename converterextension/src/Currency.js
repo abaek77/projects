@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useDebounce} from 'use-debounce';
 
 function Currency({selectCurrency}) {
 
@@ -6,7 +7,7 @@ function Currency({selectCurrency}) {
     const [translationNumber2, settranslationNumber2] = useState();
     
     const [numInputCurrency, setNumInputCurrency] = useState();
-
+    const [numResult] = useDebounce(numInputCurrency, 500);
 
 
 
@@ -24,7 +25,7 @@ function Currency({selectCurrency}) {
     const numChangeHandler = () => {
 
         return(
-        translationNumber2*numInputCurrency/translationNumber
+        translationNumber2*numResult/translationNumber
         );
         
     }

@@ -23,17 +23,25 @@ function Temperature({selectTemperature}) {
    
     const numChangeHandler = () => {
 
+       
         switch (unit){
             case "Celsius":
+                for(let i = 0; i<2; i++){
                 setNumInputTemperature(numInputTemperature)
-
+                }
+                break;
             case "Kelvin":
+                for(let i = 0; i<2; i++){
                 setNumInputTemperature(numInputTemperature-273)
-
+                }
+                break;
             case "Fahrenheit":
+                for(let i = 0; i<2; i++){
                 setNumInputTemperature((numInputTemperature-32)/1.8)
-
-        }
+                }
+                break;
+    
+    }
         switch (unit2){
             case "Celsius":
                 return numInputTemperature

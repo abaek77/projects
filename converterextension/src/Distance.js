@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useDebounce} from 'use-debounce';
 
 function Distance({selectDistance}) {
 
@@ -7,6 +8,7 @@ function Distance({selectDistance}) {
 
     
     const [numInputDistance, setNumInputDistance] = useState();
+    const [numResult] = useDebounce(numInputDistance, 500);
 
 
     const handleChangeNum = ({target:{value}}) => {
@@ -22,7 +24,7 @@ function Distance({selectDistance}) {
 
     const numChangeHandler = () => {
         return(
-        translationNumber2*numInputDistance/translationNumber
+        translationNumber2*numResult/translationNumber
         );  
     }
 
