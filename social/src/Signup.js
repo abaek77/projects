@@ -9,7 +9,16 @@ function Signup ({userEmail, userPassword, userName, setUserName, setUserPasswor
     const saveUserData = (event) => {
         event.preventDefault();
         setAccount({userName, userEmail, userPassword});
-        console.log(account);
+        if (userEmail=accounts.filter((account) => account.userEmail)){
+            return(<h4>Email already taken</h4>)
+        }
+        else if (userName=accounts.userName) {
+            return(<h4>Username already taken</h4>)
+        }
+        else {
+            accounts.push(account); 
+        }
+        console.log(accounts)
     }
 
 

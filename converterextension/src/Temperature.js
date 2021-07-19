@@ -25,27 +25,40 @@ function Temperature({selectTemperature}) {
    
     const numChangeHandler = () => {
 
-       
-        switch (unit){
-            case "Celsius":
-                setNumInputTemperature(numInputTemperature)
-                break;
-            case "Kelvin":
-                setNumInputTemperature(numInputTemperature-273)
-                break;
-            case "Fahrenheit":
-                setNumInputTemperature((numInputTemperature-32)/1.8)
-                break;
-    
-    }
-        switch (unit2){
-            case "Celsius":
-                return numInputTemperature
-            case "Kelvin":
-                return numInputTemperature + 273
-            case "Fahrenheit":
-                return(numInputTemperature*1.8)+32
-        }  
+       if(unit === "Celsius"){
+           if(unit2 === "Celsius"){
+               return numResult;
+           }
+           else if (unit2 === "Kelvin"){
+               return numResult + 273;
+           }
+           else if (unit2 === "Fahrenheit"){
+               return (numResult*1.8)+32;
+           }
+       }
+       else if (unit === "Kelvin"){
+           if(unit2 === "Celsius"){
+               return numResult-273;
+           }
+           else if (unit2 === "Kelvin"){
+               return numResult;
+           }
+           else if (unit2 === "Fahrenheit"){
+               return ((numResult-273)*1.8)+32;
+           }
+       }
+       else if (unit === "Fahrenheit"){
+           if(unit2 === "Celsius"){
+               return (numResult-32)/1.8
+           }
+           else if (unit2 === "Kelvin"){
+               return (numResult-32)/1.8+273
+           }
+           else if (unit2 === "Fahrenheit"){
+               return numResult
+           }
+       }
+
         
     }
 
