@@ -24,7 +24,7 @@ function Distance({selectDistance}) {
 
     const numChangeHandler = () => {
         return(
-        translationNumber2*numResult/translationNumber
+        Number((translationNumber2*numResult/translationNumber).toFixed(2))
         );  
     }
 

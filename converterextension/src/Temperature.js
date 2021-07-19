@@ -15,7 +15,7 @@ function Temperature({selectTemperature}) {
     }
 
 
-    
+
     const translationNumberHandler = ({target:{value}}) => {
         setUnit(value);
     }
@@ -27,35 +27,35 @@ function Temperature({selectTemperature}) {
 
        if(unit === "Celsius"){
            if(unit2 === "Celsius"){
-               return numResult;
+               return Number((numResult).toFixed(2));
            }
            else if (unit2 === "Kelvin"){
-               return numResult + 273;
+               return Number((numResult + 273).toFixed(2));
            }
            else if (unit2 === "Fahrenheit"){
-               return (numResult*1.8)+32;
+               return Number(((numResult*1.8)+32).toFixed(2));
            }
        }
        else if (unit === "Kelvin"){
            if(unit2 === "Celsius"){
-               return numResult-273;
+               return Number((numResult-273).toFixed(2));
            }
            else if (unit2 === "Kelvin"){
-               return numResult;
+               return Number((numResult).toFixed(2));
            }
            else if (unit2 === "Fahrenheit"){
-               return ((numResult-273)*1.8)+32;
+               return Number((((numResult-273)*1.8)+32).toFixed(2));
            }
        }
        else if (unit === "Fahrenheit"){
            if(unit2 === "Celsius"){
-               return (numResult-32)/1.8
+               return Number(((numResult-32)/1.8).toFixed(2));
            }
            else if (unit2 === "Kelvin"){
-               return (numResult-32)/1.8+273
+               return Number(((numResult-32)/1.8+273).toFixed(2));
            }
            else if (unit2 === "Fahrenheit"){
-               return numResult
+               return Number((numResult).toFixed(2));
            }
        }
 
