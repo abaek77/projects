@@ -1,11 +1,13 @@
 
 import React, {useState} from 'react';
+import {useDebounce} from 'use-debounce';
 
 function Temperature({selectTemperature}) {
 
     const [unit, setUnit] = useState("");
     const [unit2, setUnit2] = useState("");
     const [numInputTemperature, setNumInputTemperature] = useState(0);
+    const [numResult] = useDebounce(numInputTemperature, 500);
 
     const handleChangeNum = ({target:{value}}) => {
         setNumInputTemperature(value);
@@ -26,19 +28,13 @@ function Temperature({selectTemperature}) {
        
         switch (unit){
             case "Celsius":
-                for(let i = 0; i<2; i++){
                 setNumInputTemperature(numInputTemperature)
-                }
                 break;
             case "Kelvin":
-                for(let i = 0; i<2; i++){
                 setNumInputTemperature(numInputTemperature-273)
-                }
                 break;
             case "Fahrenheit":
-                for(let i = 0; i<2; i++){
                 setNumInputTemperature((numInputTemperature-32)/1.8)
-                }
                 break;
     
     }
