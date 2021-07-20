@@ -8,14 +8,14 @@ padding-bottom: 0;
     background-color: #161616;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.App{
+.component{
     width: 15%;
 }
 .category-title{
     color: rgb(80, 80, 80);
     margin: 0;
     padding-left: 10px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .category{
     color: white;
