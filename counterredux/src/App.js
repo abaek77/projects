@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { actionCreators } from './count/index2';
+import { actionCreators } from './count/index';
 import './App.css';
 
 function App() {

@@ -6,3 +6,6 @@ import  Counter  from './Counter';
 })
 
 export default reducers;
+
+export * as actionCreators from './actionCreators'
+export * from './store'
