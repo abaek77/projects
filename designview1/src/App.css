@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: #fff5f5;
+  background-color: #fff5fA;
 }
 .nav{
   display: flex;
@@ -70,4 +70,5 @@ border: none;
 .overlay{
   position: absolute;
   margin-left: 300px;
+
 }
