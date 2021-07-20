@@ -1,0 +1,37 @@
+.title{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+padding: 10px;
+padding-bottom: 0;
+}
+*{
+    background-color: #161616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.App{
+    width: 15%;
+}
+.category-title{
+    color: rgb(80, 80, 80);
+    margin: 0;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.category{
+    color: white;
+    padding-left: 10px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+img{
+    filter:opacity(100%);
+    width: 25px;
+    padding-left: 10px;
+}
+.people{
+    color: white;
+    padding-left: 10px;
+    margin-top: -26px;
+    margin-left: 30px;
+    font-weight: 400;
+}
