@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDebounce} from 'use-debounce';
 
-function Currency({selectCurrency}) {
+function Currency() {
 
     const [translationNumber, settranslationNumber] = useState();
     const [translationNumber2, settranslationNumber2] = useState();
@@ -11,29 +11,20 @@ function Currency({selectCurrency}) {
 
 
 
-    const translationNumberHandler = ({target:{value}}) => {
-        settranslationNumber(value);
-    }
-    const translationNumberHandler2 = ({target:{value}}) => {
-        settranslationNumber2(value);
-    }
-
     const handleChangeNum = ({target:{value}}) => {
         setNumInputCurrency(value);
     }
 
-    const numChangeHandler = () => {
-
+    const convertValues = () => {
         return(
         Number((translationNumber2*numResult/translationNumber).toFixed(2))
-        );
-        
+        );    
     }
 
     return(
-    <form hidden={!selectCurrency} >
+    <form  >
         <h3>Convert</h3>
-        <select onChange = {translationNumberHandler}>
+        <select onChange = {(e) => settranslationNumber(e.target.value)}>
             <option hidden = {true}>select</option>
             <option value = {1}>USD</option>
             <option value = {.85}>Euro</option>
@@ -43,7 +34,7 @@ function Currency({selectCurrency}) {
         </select>
         <input type="number" value={numInputCurrency}  onChange = {handleChangeNum}/>
         <h3>to</h3>
-        <select onChange ={translationNumberHandler2}>
+        <select onChange ={(e) => settranslationNumber2(e.target.value)}>
             <option hidden = {true}>select</option>
             <option value = {1}>USD</option>
             <option value = {.85}>Euro</option>
@@ -53,7 +44,7 @@ function Currency({selectCurrency}) {
         </select>
         
         {numInputCurrency && translationNumber && translationNumber2 ?
-        <h3>{numChangeHandler()}</h3>
+        <h3>{convertValues()}</h3>
         :
         <h3>Provide more information</h3>
     }

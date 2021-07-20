@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDebounce} from 'use-debounce';
 
-function Distance({selectDistance}) {
+function Distance() {
 
     const [translationNumber, setTranslationNumber] = useState();
     const [translationNumber2, setTranslationNumber2] = useState();
@@ -15,23 +15,16 @@ function Distance({selectDistance}) {
         setNumInputDistance(value);
     }
 
-    const translationNumberHandler = ({target:{value}}) => {
-        setTranslationNumber(value);
-    }
-    const translationNumberHandler2 = ({target:{value}}) => {
-        setTranslationNumber2(value);
-    }
-
-    const numChangeHandler = () => {
+    const convertValue = () => {
         return(
         Number((translationNumber2*numResult/translationNumber).toFixed(2))
         );  
     }
 
     return(
-    <form hidden={!selectDistance} >
+    <form  >
         <h3>Convert</h3>
-        <select onChange = {translationNumberHandler}>
+        <select onChange = {(e) => setTranslationNumber(e.target.value)}>
             <option hidden = {true}>select</option>
             <option value = {1}>meter</option>
             <option value = {3.28084}>feet</option>
@@ -41,7 +34,7 @@ function Distance({selectDistance}) {
         </select>
         <input type="number" value={numInputDistance} onChange = {handleChangeNum} />
         <h3>to</h3>
-        <select onChange ={translationNumberHandler2}>
+        <select onChange ={(e) => setTranslationNumber2(e.target.value)}>
             <option hidden = {true}>select</option>
             <option value = {1}>meter</option>
             <option value = {3.28084}>feet</option>
@@ -51,7 +44,7 @@ function Distance({selectDistance}) {
         </select>
       
         {numInputDistance && translationNumber && translationNumber2 ?
-        <h3>{numChangeHandler()}</h3>
+        <h3>{convertValue()}</h3>
         :
         <h3>Provide more information</h3>
     }

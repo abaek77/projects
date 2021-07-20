@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {useDebounce} from 'use-debounce';
 
-function Temperature({selectTemperature}) {
+function Temperature() {
 
     const [unit, setUnit] = useState("");
     const [unit2, setUnit2] = useState("");
@@ -23,39 +23,39 @@ function Temperature({selectTemperature}) {
         setUnit2(value);
     }
    
-    const numChangeHandler = () => {
+    const convertValues = () => {
 
        if(unit === "Celsius"){
            if(unit2 === "Celsius"){
-               return Number((numResult).toFixed(2));
+               return (numResult)
            }
            else if (unit2 === "Kelvin"){
-               return Number((numResult + 273).toFixed(2));
+               return (numResult + 273)
            }
            else if (unit2 === "Fahrenheit"){
-               return Number(((numResult*1.8)+32).toFixed(2));
+               return ((numResult*1.8)+32)
            }
        }
        else if (unit === "Kelvin"){
            if(unit2 === "Celsius"){
-               return Number((numResult-273).toFixed(2));
+               return (numResult-273)
            }
            else if (unit2 === "Kelvin"){
-               return Number((numResult).toFixed(2));
+               return (numResult)
            }
            else if (unit2 === "Fahrenheit"){
-               return Number((((numResult-273)*1.8)+32).toFixed(2));
+               return (((numResult-273)*1.8)+32)
            }
        }
        else if (unit === "Fahrenheit"){
            if(unit2 === "Celsius"){
-               return Number(((numResult-32)/1.8).toFixed(2));
+               return ((numResult-32)/1.8)
            }
            else if (unit2 === "Kelvin"){
-               return Number(((numResult-32)/1.8+273).toFixed(2));
+               return (numResult-32)/1.8+273
            }
            else if (unit2 === "Fahrenheit"){
-               return Number((numResult).toFixed(2));
+               return (numResult)
            }
        }
 
@@ -63,7 +63,7 @@ function Temperature({selectTemperature}) {
     }
 
     return(
-    <form hidden={!selectTemperature} >
+    <form  >
         <h3>Convert</h3>
         <select onChange = {translationNumberHandler} value = {unit}>
             <option hidden = {true}>select</option>
@@ -81,7 +81,7 @@ function Temperature({selectTemperature}) {
         </select>
 {unit && unit2 && numInputTemperature ?
 
-<h3>{numChangeHandler()}</h3>
+<h3>{Number(convertValues()).toFixed(2)}</h3>
 :
 <h3>Provide more information</h3>
 }
