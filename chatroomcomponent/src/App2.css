@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App2{
+    background: #171716;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.Jimmy{
+width: 300px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+h3{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.category{
+    color: #888888;
+    margin-left: 10px;
+    font-size: 10px;
+}
+h4{
+    color: white;
+    justify-content: flex-start;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.categories{
+    display: flex;
+}
+h6{
+    color: #9c9c9c;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 10px;
+}
+.buttons{
+display: flex;
+}
+button{
+margin-left: 10px;
+margin-bottom: 10px;
+padding-left: 5px;
+padding-right: 5px;
+text-align: center;
+background: #2B2B2B;
+border: none;
+color: #888888;
+border-radius: 3px;
+}
+.thirdbutton{
+    display: flex;
+    padding-top: 3px;
+}
+.star{
+    background-image: url(https://purepng.com/public/uploads/large/purepng.com-grey-starstargeometricallydecagonconcavestardomclipartblackgrey-1421526502793oblca.png);
+    background-size: 21px;
+    width: 21px;
+    height: 21px;
+}
+.free{
+    color: #7EF7F3;
+}
