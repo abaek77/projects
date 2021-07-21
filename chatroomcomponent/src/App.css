@@ -5,12 +5,15 @@ padding: 10px;
 padding-bottom: 0;
 }
 *{
-    background-color: #161616;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .component{
-    width: 15%;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #161616;
 }
+
 .category-title{
     color: rgb(80, 80, 80);
     margin: 0;
@@ -27,6 +30,7 @@ img{
     filter:opacity(100%);
     width: 25px;
     padding-left: 10px;
+
 }
 .people{
     color: white;
@@ -34,4 +38,5 @@ img{
     margin-top: -26px;
     margin-left: 30px;
     font-weight: 400;
+    padding-bottom: 23px;
 }

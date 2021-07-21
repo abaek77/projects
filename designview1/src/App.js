@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
   return (
-    <div className="border">
     <div className="App">
       <div className="nav">
         <img src="https://i.gyazo.com/8de773e9310bed783a62e86fe3dde0cc.png" alt="logo" className="logo"/>
@@ -26,10 +25,9 @@ function App() {
       </div>
       
       <div className="carosel">
-        <img src="https://lh3.googleusercontent.com/proxy/JiPq5hlD1xRkWTYfAc1jIvimjSr2whESR1iDEMzWS5ej_tSPDLJu8nICirYZpSCj1hCyHfp5cdUZ4X3LXtVaExaw-JSKWr9vndFtdG9fNpaVmM6KGBInndID7zNBzYD2aTMHMybGhYG8ZrCGk8edIiM40w" alt="iPhone" className="iPhone" />
+        <img src="https://pngimg.com/uploads/iphone_12/iphone_12_PNG23.png" alt="iPhone" className="iPhone" />
         <button className="overlay">Get started</button>
       </div>
-    </div>
     </div>
   );
 }
