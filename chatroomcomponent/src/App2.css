@@ -49,17 +49,20 @@ display: flex;
 button{
 margin-left: 10px;
 margin-bottom: 10px;
-padding-left: 5px;
-padding-right: 5px;
+padding-left: 10px;
+padding-right: 10px;
 text-align: center;
 background: #2B2B2B;
 border: none;
 color: #888888;
 border-radius: 3px;
+font-size: 10px;
 }
 .thirdbutton{
     display: flex;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .star{
     background-image: url(https://purepng.com/public/uploads/large/purepng.com-grey-starstargeometricallydecagonconcavestardomclipartblackgrey-1421526502793oblca.png);

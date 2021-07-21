@@ -19,7 +19,7 @@ return(
         </div>
         <div className="buttons">
             <button className="star"></button>
-            <button>FIND RELATED</button>
+            <button className="thirdbutton">FIND RELATED</button>
             <button className="thirdbutton">GET TICKET [<div className="free">FREE</div>]</button>
         </div>
     </div>

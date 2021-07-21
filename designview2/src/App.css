@@ -3,10 +3,12 @@
   margin: 20px;
   background-image: url(https://cdn.dribbble.com/users/427857/screenshots/15812665/media/846c353fd5fb28cbbd0b797211add775.png);
   width: 1200px;
-  border: 75px solid #B7C6F7;
   border-radius: 15px;
 }
-
+.border{
+  background-color: #B7C6F7;
+  margin: 75px;
+}
 *{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;

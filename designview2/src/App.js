@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-
+    <div className="border">
     <div className="App">
       <div className="nav">
       
@@ -31,6 +31,7 @@ function App() {
         <p className="scrolldown">Scroll down to learn more</p>
       </div>
 
+    </div>
     </div>
 
   );
