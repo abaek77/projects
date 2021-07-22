@@ -1,14 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 html{
     background: #C1BBBD;
 }
 .App{
 
-    width: 900px;
+    width: 59.2%;
     background-color: #C1BBBD;
     margin: 40px;
     border-top-left-radius: 30px;
@@ -99,20 +100,19 @@ h1{
     display: flex;
     justify-content: space-around;
     width: 500px;
-    align-items: center;
     margin-left: -10px;
 }
 #rose1{
-width: 200px;
-height: 100px;
+width: 40%;
+height: auto;
 padding: 10px;
 border-radius: 30px;
 box-shadow: 0px 0px 0px 4px #e7e8ec, 0px 0px 0px 6px #d9e0e6 ;
 }
 #tulip1{
-width: 200px;
+width: 40%;
 padding: 10px;
-
+height: auto;
 border-radius: 30px;
 box-shadow: 0px 0px 0px 4px #e7e8ec, 0px 0px 0px 6px #d9e0e6 ;
 }
