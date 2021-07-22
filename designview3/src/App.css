@@ -273,7 +273,7 @@ opacity: 10%;
     background: white;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .astercost{
     margin-left: -7px;
@@ -303,5 +303,6 @@ opacity: 10%;
     width: 50px;
 }
 .cartspacing{
-display: flex;
+margin-top: -10px;
+margin-bottom: 10px;
 }

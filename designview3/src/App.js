@@ -86,15 +86,17 @@ function App() {
           </button>
           <button id="two"className="seller">
             <div className="flag">
-            <h3>New!</h3>
+            <h3 className="new">New!</h3>
             <button className="heart"></button>
             </div>
             
-            <div>
-              <p>for special person</p>
-              <h3>Rose Bouquet</h3>
-              <h2>$ 27.00</h2>
+            <div className="sellerbottom">
+              <p className="specialnew">for special person</p>
+              <h3 className="aster">Rose Bouquet</h3>
+              <h2 className="astercost">$ 27.00</h2>
+              <div className="cartspacing">
               <button className="cart"></button>
+              </div>
             </div>
           </button>
           <button id="three"className="seller">
