@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   return (
+    <div className="border">
     <div className="App">
       <div className="nav">
         <img src="https://i.gyazo.com/8de773e9310bed783a62e86fe3dde0cc.png" alt="logo" className="logo"/>
@@ -24,10 +25,11 @@ function App() {
       </form>
       </div>
       
-      <div className="carosel">
+      <div className="carousel">
         <img src="https://pngimg.com/uploads/iphone_12/iphone_12_PNG23.png" alt="iPhone" className="iPhone" />
         <button className="overlay">Get started</button>
       </div>
+    </div>
     </div>
   );
 }
