@@ -12,8 +12,8 @@ function App() {
               <a className="navlinks"href="">New Arrival</a>
               <a className="navlinks"href="">Best Seller</a>
               <a className="navlinks"href="">Reviews</a>
+              <button id="signup"className="navlinks">Sign Up</button>
             </nav>
-            <button className="signup">Sign Up</button>
         </div>
       </div>
 
@@ -23,39 +23,43 @@ function App() {
         <p className="description">Priding ourselves on the quality, bold colours and sustainability of our products, will give you a boost of confidence.</p>
         <button className="startshopping">Start Shopping</button>
         <div className="buttons1">
-        <button id="tulip1"className="package">
+        <div id="tulip1"className="package">
           <img src="https://flowersgifts-ua.com/wp-content/uploads/2018/03/11-tulips.png" alt="tulipbouquet" className="tulipbouquet"/>
           <div className="inside">
           <h3 className="flowerpackage">Tulip Package</h3>
           <h2 className="flowerprice">$70.99</h2>
           <p className="detail">Detail --)</p>
           </div>
-        </button>
-        <button id="rose1"className="package">
+        </div>
+        <div id="rose1"className="package">
           <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Roses-PNG/Transparent_Red_Roses_Bouquet_PNG_Clipart_Picture.png?m=1434276736" alt="rosebouquet" className="rosebouquet" />
           <div className="inside">
           <h3 className="flowerpackage">Rose Package</h3>
           <h2 className="flowerprice">$70.99</h2>
           <p className="detail">Detail --)</p>
           </div>
-        </button>
+        </div>
         </div>
       </div>
 
 
       <div className="midbar">
-      <div className="midbar1">
-        <h2 className="number">3000+</h2>
-        <h2 className="number">5000+</h2>
-        <h2 className="number">7000+</h2>
-        <h2 className="number">25+</h2>
-      </div>
-      <div className="midbar2">
-        <h4 className="packagessold">Packages Sold</h4>
-        <h4 className="bouquetsold">Bouquet Sold</h4>
-        <h4 className="happyclients">Happy Clients</h4>
-        <h4 className="yearsof">Years of Experience</h4>
-      </div>
+        <div className="midbardesc">
+          <h2 className="number">3000+</h2>
+          <h4 className="description2">Packages Sold</h4>
+          </div>
+        <div className="midbardesc">
+          <h2 className="number">5000+</h2>
+          <h4 className="description2">Bouquet Sold</h4>
+        </div>
+        <div className="midbardesc">
+          <h2 className="number">7000+</h2>
+          <h4 className="description2">Happy Clients</h4>
+        </div>
+        <div className="midbardesc">
+          <h2 className="number">25+</h2>
+          <h4 className="description2">Years of Experience</h4>
+        </div>
       </div>
       
       
@@ -69,7 +73,7 @@ function App() {
         </div>
         <h3 className="title2">Our Best Sellers This Month</h3>
         <div className="bestsellers">
-          <button id="one"className="seller">
+          <div id="one"className="seller">
             <div className="flag">
             <h3 className="new">New!</h3>
             <button className="heart"></button>
@@ -79,44 +83,51 @@ function App() {
               <p className="specialnew">for special person</p>
               <h3 className="aster">Aster Bouquet</h3>
               <h2 className="astercost">$ 27.23</h2>
-              <div className="cartspacing">
+              <div className="cartspace">
               <button className="cart"></button>
               </div>
             </div>
-          </button>
-          <button id="two"className="seller">
+          </div>
+          <div id="two"className="seller">
             <div className="flag">
             <h3 className="new">New!</h3>
             <button className="heart"></button>
             </div>
-            
             <div className="sellerbottom">
               <p className="specialnew">for special person</p>
               <h3 className="aster">Rose Bouquet</h3>
               <h2 className="astercost">$ 27.00</h2>
-              <div className="cartspacing">
+              <div className="cartspace">
               <button className="cart"></button>
               </div>
             </div>
-          </button>
-          <button id="three"className="seller">
+          </div>
+          <div id="three"className="seller">
+            <div className="flag2">
             <button className="heart"></button>
-            <div>
-              <p>for special person</p>
-              <h3>Tulip Bouquet</h3>
-              <h2>$ 20.99</h2>
-              <button className="cart"></button>
             </div>
-          </button>
-          <button id="four"className="seller">
+            <div className="sellerbottom">
+              <p className="specialnew">for special person</p>
+              <h3 className="aster">Tulip Bouquet</h3>
+              <h2 className="astercost">$ 20.99</h2>
+              <div className="cartspace">
+              <button className="cart"></button>
+              </div>
+            </div>
+          </div>
+          <div id="four"className="seller">
+            <div className="flag2">
           <button className="heart"></button>
-            <div>
-              <p>for special person</p>
-              <h3>Special Bouquet</h3>
-              <h2>$ 50.99</h2>
+          </div>
+            <div className="sellerbottom">
+              <p className="specialnew">for special person</p>
+              <h3 className="aster">Special Bouquet</h3>
+              <h2 className="astercost">$ 50.99</h2>
+              <div className="cartspace">
               <button className="cart"></button>
+              </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>

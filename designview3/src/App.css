@@ -7,6 +7,7 @@ html{
     background: #C1BBBD;
 }
 .App{
+
     width: 900px;
     background-color: #C1BBBD;
     margin: 40px;
@@ -18,34 +19,30 @@ html{
     display: flex;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .title{
     color: black;
     text-decoration: none;
-    padding-top: 7px;
-}
-.leftside{
     margin-left: 80px;
-    padding-top: 23px;
-    padding-bottom: 25px;
 }
 .navright{
     display: flex;
-    margin-left: 360px;
-    padding-top: 32px;
-    padding-bottom: 22px;
+}
+a{
+    color: black;
 }
 .navlinks{
     text-decoration: none;
-    color: black;
+    margin-right: 40px;
     font-size: 13px;
-    padding-left: 20px;
 }
-.signup{
-    margin-left: 25px;
+#signup{
+    
     padding: 10px;
     font-size: 12px;
-    margin-top: -5px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 20px;
@@ -89,7 +86,6 @@ h1{
     margin-top: 40px;
     display:flex;
     margin-bottom: 20px;
- 
 }
 .tulipbouquet{
     width: 100px;
@@ -97,21 +93,28 @@ h1{
 .rosebouquet{
     width: 100px;
     height: 100px;
-    
 }
 .buttons1{
     padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    align-items: center;
+    margin-left: -10px;
 }
 #rose1{
-margin-left: 220px;
-margin-top: -140px;
+width: 200px;
+height: 100px;
 padding: 10px;
 border-radius: 30px;
+box-shadow: 0px 0px 0px 4px #e7e8ec, 0px 0px 0px 6px #d9e0e6 ;
 }
 #tulip1{
+width: 200px;
 padding: 10px;
-margin-top: 60px;
+
 border-radius: 30px;
+box-shadow: 0px 0px 0px 4px #e7e8ec, 0px 0px 0px 6px #d9e0e6 ;
 }
 .flowerpackage{
     margin-top: 15px;
@@ -130,45 +133,19 @@ border-radius: 30px;
     color: rgb(202, 202, 202);
 }
 .midbar{
-    background: black;
-    
-}
-.midbar1{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 30px;
-    color: white;
-    padding-top: 70px;
-
-}
-.midbar2{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
+    background: black;  
+    padding-top: 70px; 
     padding-bottom: 70px;
-    opacity: 90%;
-    letter-spacing: .4px;
-    
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-.happyclients{
-font-weight: 200;
-margin-left: 25px;
-
+.midbardesc{
+    text-align: center;
 }
-.bouquetsold{
-    margin-left: 30px;
-    font-weight: 200;
-}
-.packagessold{
-   padding-left: 10px;
-    font-weight: 200;
-}
-.yearsof{
+.description2{
     font-weight: 200;
 }
 .number{
@@ -177,17 +154,17 @@ margin-left: 25px;
 .bottommain{
     background: rgb(255, 252, 247);
     padding: 30px;
-    padding-left: 80px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 .bottomnav{
     display: flex;
-    
+    justify-content: space-between;
+    margin-left: 40px;
 }
 .bottombutton{
     display: flex;
-   margin-left: 610px;
+    margin-right: 20px;
 }
 .bottomleft{
 margin-right: 10px;
@@ -216,35 +193,60 @@ opacity: 10%;
 .title2{
     font-size: 22px;
     font-weight: 600;
-    margin-top: -7px;
+    margin-left: 40px;
 }
-#three{
-}
+
 .bestsellers{
     display: flex;
     padding-top: 20px;
-
+    justify-content: space-around;
+    margin-left: 20px;
 }
 .seller{
-    padding: 0px;
     border: none;
     padding-bottom: 0px;
-    margin-left: 9px;
     border-radius: 25px;
+    width: 180px;
+    background: #E7E8EC;
+    flex-direction: column;
 }
-#one{
+.seller:nth-child(1){
     background-image: url(https://cdn.globalrose.com/assets/img/prod/buy-white-aster-flowers-globalrose.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+    background-position-y: 40px;
+}
+.seller:nth-child(2){
+    background-image: url(https://cdn.yourpng.com/uploads/preview/red-rose-bouquet-flower-png-images-2-11616397254rrvwczqgse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+.seller:nth-child(3){
+    background-image: url(https://flowersgifts-ua.com/wp-content/uploads/2018/03/11-tulips.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+.seller:nth-child(4){
+    background-image: url(https://images8.design-editor.com/95/9590774/3958%2F027561F8-AAEF-4AFC-6F2A-CA63EC352ECA.png_400);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 45px;
 }
 .flag{
-    
+    justify-content: space-between;
+    height: 180px;
     display: flex;
-    margin-top: -10px;
-    margin-left: 0px;
-    padding-top: 30px;
-    
+    margin-top: 20px;
+    margin-right: 17px;
+}
+.flag2{
+    display: flex;
+    height: 180px;
+    margin-top: 20px;
+    justify-content: flex-end;
+    margin-right: 17px;
 }
 .heart{
     background-image: url(https://i.pinimg.com/originals/20/17/8d/20178db3af74897c81b501d3c256773e.png);
@@ -253,56 +255,58 @@ opacity: 10%;
     background-size: contain;
     border: none;
     background-repeat: no-repeat;
-    margin-left: 70px;
-    margin-top: 5px;
-    margin-right: 10px;
+}
 
-}
 .specialnew{
-    margin-top: 100px;
-    text-align: left;
-    margin-left: 15px;
-    padding-top: 10px;
     font-size: 8px;
-}
-.aster{
-    margin-left: -20px;
-    padding-top: 5px;
 }
 .sellerbottom{
     background: white;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding-bottom: 30px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .astercost{
-    margin-left: -7px;
     font-weight: 400;
     width: 100px;
 }
 .cart{
-    
     border-radius: 20px;
     border: none;
-    text-align: center;
     color: white;
     background-image: url(https://www.pinclipart.com/picdir/big/403-4035278_png-file-svg-shopping-cart-icon-png-clipart.png);
     background-size: 16px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 100px;
-   margin-top: -23px;
     border: solid 1px black
 }
 .new{
     background: black;
     color: white;
     padding-left: 0px;
-    width: 50px;
+    width: 65px;
+    height: 28px;
+    position: relative;
+
 }
-.cartspacing{
-margin-top: -10px;
-margin-bottom: 10px;
+.new::after{
+    content: '';
+    position: absolute;
+    z-index: 99999;
+    right: 0px;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    border-top: 12px solid transparent;
+    border-right: 10px solid #efefef;
+    border-bottom: 12px solid transparent;
+}
+.cartspace{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top:-20px;
 }
