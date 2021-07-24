@@ -87,19 +87,140 @@ function App() {
           <div className="incomespendings">
             <div className="incometab">
               <div className="leftincome">
-
+                <div className="coolarrowtab"></div>
               </div>
               <div className="rightincome">
-
+                <p className="incometext">Income</p>
+                <h3 className="incomecost">$5,700</h3>
               </div>
             </div>
             <div className="spendingstab">
-      
+              <div className="leftspendings">
+                <div className="coolarrow2"></div>
+              </div>
+              <div className="rightspendings">
+                <p className="incometext">Spendings</p>
+                <h3 className="incomecost">$2,254</h3>
+              </div>
+            </div>
+          </div>
+          <div className="bottommain">
+            <h2 className="botmidtitle">Latest spendings</h2>
+            <div className="midnav">
+              <div className="applenav">
+                <div className="leftapplenav">
+                <img src="" alt="" className="applecon"/>
+                <h4 className="applestore">Apple Store</h4>
+                </div>
+                <div className="rightapplenav">
+                  <h4 className="applecost">- $32.50</h4>
+                  <button className="arrow"></button>
+                </div>
+              </div>
+              <div className="applenav">
+                <div className="leftapplenav">
+                <img src="" alt="" className="xboxcon"/>
+                <h4 className="applestore">Amazon</h4>
+                </div>
+                <div className="rightapplenav">
+                  <h4 className="applecost">- $4.20</h4>
+                  <button className="arrow"></button>
+                </div>
+              </div>
+              <div className="applnav">
+                <div className="leftapplenav">
+                <img src="" alt="" className="xboxcon"/>
+                <h4 className="applestore">Xbox</h4>
+                </div>
+                <div className="rightapplenav">
+                  <h4 className="applecost">- $100.29</h4>
+                  <button className="arrow"></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
      </div>
-     <div className="rightcolumn"></div>
+     <div className="rightcolumn">
+       <div className="rightnav">
+         <button className="settings"></button>
+         <button className="notifications"><img src="" alt="" className="reddot" /></button>
+       </div>
+       <div className="chart">
+         <img src="" alt="" className="pichart"/>
+         <div className="itemsofchart">
+           <ul>
+             <li className="blackdot"><div className="transport">Transport</div><div className="transportcost">$120.20</div></li>
+             <li className="yellowdot"><div className="transport">Onlineshopping</div><div className="transportcost">$1200.00</div></li>
+             <li className="bluedot"><div className="transport">Restaurant</div><div className="transportcost">$250.40</div></li>
+           </ul>
+         </div>
+       </div>
+       <div className="sendmoney">
+         <div className="sendmoneynav">
+           <h4 className="sendmoneytitle">Send money to</h4>
+           <button className="plus"></button>
+         </div>
+          <div className="people">
+          <div className="person">
+            <img src="" alt="" className="pfp2"/>
+            <p className="firstname">Ted</p>
+            <p className="lastname">Lasso</p>
+          </div>
+          <div className="person">
+            <img src="" alt="" className="pfp2"/>
+            <p className="firstname">Joe</p>
+            <p className="lastname">Biden</p>
+          </div>
+          <div className="person">
+            <img src="" alt="" className="pfp2"/>
+            <p className="firstname">Shiba</p>
+            <p className="lastname">Inu</p>
+          </div>
+          <div className="person">
+            <img src="" alt="" className="pfp2"/>
+            <p className="firstname">Elon</p>
+            <p className="lastname">Musk</p>
+          </div>
+        </div>
+        <div className="scheduledpayment">
+          <div className="schedulednav">
+            <h4 className="sendmoneytitle">Scheduled payments</h4>
+            <button className="plus">)</button>
+          </div>
+          <div className="paymentcompanies">
+            <div id="youtube"className="company1">
+              <h5 className="rate">$3.99/m</h5>
+              <div className="bottomcompany">
+                <img src="" alt="" className="companylogo"/>
+                <p className="company">Youtube</p>
+              </div>
+            </div>
+            <div id="Ended Sound"className="company1">
+              <h5 className="rate">$1.99/m</h5>
+              <div className="bottomcompany">
+                <img src="" alt="" className="companylogo"/>
+                <p className="company">Youtube</p>
+              </div>
+            </div>
+            <div id="Vimeo Pro" className="company1">
+              <h5 className="rate">$2.99/m</h5>
+              <div className="bottomcompany">
+                <img src="" alt="" className="companylogo"/>
+                <p className="company">Vimeo Pro</p>
+              </div>
+            </div>
+            <div id="Spotify"className="company1">
+              <h5 className="rate">$15.00/m</h5>
+              <div className="bottomcompany">
+                <img src="" alt="" className="companylogo"/>
+                <p className="company">Spotify</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
     </div>
   );
 }

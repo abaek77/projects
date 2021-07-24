@@ -95,6 +95,7 @@ font-size: 13px;
   text-align: center;
   font-size: 10px;
   font-weight: 700;
+  cursor: pointer;
 }
 .topbox{
   margin-bottom: 8px;
@@ -159,6 +160,7 @@ font-size: 13px;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 }
 .middlebox{
   display: flex;
