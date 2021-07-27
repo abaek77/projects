@@ -151,83 +151,99 @@ function App() {
 
      <div className="rightcolumn">
        <div className="width2">
+         <div className="tophalfright">
        <div className="rightnav">
          <button className="settings"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png" alt="" className="gear"/></button>
-         <button className="notifications"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Basic_red_dot.png" className="reddot" alt="" /><img src="https://img.icons8.com/ios/452/appointment-reminders--v1.png" alt="" className="noti" /> </button>
+         <button className="notifications"><img src="https://img.icons8.com/ios/452/appointment-reminders--v1.png" alt="" className="noti" /><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Basic_red_dot.png" className="reddot" alt="" /> </button>
        </div>
+       <div className="righttop">
+         <div className="rightnav2">
+         <h2 className="expenses">Expenses statistics</h2>
+         <select  name="" id="">
+           <option hidden="true"value="">Month</option>
+         </select>
+         </div>
        <div className="chart">
-         <img src="" alt="" className="pichart"/>
+         <img src="https://cdn.fastly.picmonkey.com/content4/previews/infographic_one/infographic_one_14_384.png" alt="" className="pichart"/>
          <div className="itemsofchart">
-           <ul>
-             <li className="blackdot"><div className="transport">Transport</div><div className="transportcost">$120.20</div></li>
-             <li className="yellowdot"><div className="transport">Onlineshopping</div><div className="transportcost">$1200.00</div></li>
-             <li className="bluedot"><div className="transport">Restaurant</div><div className="transportcost">$250.40</div></li>
+           <ul className="blackdot">
+             <li ><div className="transport">Transport</div><div className="transportcost">$120.20</div></li>
+            </ul> 
+            <ul className="yellowdot">
+             <li ><div className="transport">Onlineshopping</div><div className="transportcost">$1,200.00</div></li>
+             </ul> 
+             <ul className="bluedot">
+             <li ><div className="transport">Restaurant</div><div className="transportcost">$250.40</div></li>
            </ul>
          </div>
        </div>
+       </div>
+       </div>
+       <div className="bothalfright">
        <div className="sendmoney">
          <div className="sendmoneynav">
            <h4 className="sendmoneytitle">Send money to</h4>
-           <button className="plus"></button>
+           <button className="plus"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/500px-Plus_symbol.svg.png" alt="" className="plussign"/></button>
          </div>
           <div className="people">
           <div className="person">
-            <img src="" alt="" className="pfp2"/>
+            <img src="https://external-preview.redd.it/MMflGblLudSD_tqCefYHx1ei2_BWiT3ZJkBKMVHtXHc.jpg?auto=webp&s=6bedfc7ae24c712ac475eb8b533b46109860b4f7" alt="" className="pfp2"/>
             <p className="firstname">Ted</p>
             <p className="lastname">Lasso</p>
           </div>
           <div className="person">
-            <img src="" alt="" className="pfp2"/>
+            <img src="https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2U5MjlmMGE2YjcyMTJhMjA0YWViYWIyOWY5ZDEzZGU1LnBuZw%3D%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D" alt="" className="pfp2"/>
             <p className="firstname">Joe</p>
             <p className="lastname">Biden</p>
           </div>
           <div className="person">
-            <img src="" alt="" className="pfp2"/>
+            <img src="https://pbs.twimg.com/profile_images/610150821397987331/qZzryLFn_400x400.jpg" alt="" className="pfp2"/>
             <p className="firstname">Shiba</p>
             <p className="lastname">Inu</p>
           </div>
           <div className="person">
-            <img src="" alt="" className="pfp2"/>
+            <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5OTk2ODUyMTMxNzM0ODcy/gettyimages-1229892983-square.jpg" alt="" className="pfp2"/>
             <p className="firstname">Elon</p>
             <p className="lastname">Musk</p>
           </div>
         </div>
         <div className="scheduledpayment">
           <div className="schedulednav">
-            <h4 className="sendmoneytitle">Scheduled payments</h4>
-            <button className="plus">)</button>
+            <h4 className="sendmoneytitle2">Scheduled payments</h4>
+            <button className="plus"><img src="https://static.thenounproject.com/png/1513337-200.png" className="arrowbot" alt="" /></button>
           </div>
           <div className="paymentcompanies">
             <div id="youtube"className="company1">
               <h5 className="rate">$3.99/m</h5>
               <div className="bottomcompany">
-                <img src="" alt="" className="companylogo"/>
+                <img src="https://clipart.info/images/ccovers/1590430652red-youtube-logo-png-xl.png" alt="" className="companylogo"/>
                 <p className="company">Youtube</p>
               </div>
             </div>
             <div id="Ended Sound"className="company1">
-              <h5 className="rate">$1.99/m</h5>
+              <h5 className="rate">$5.99/m</h5>
               <div className="bottomcompany">
-                <img src="" alt="" className="companylogo"/>
-                <p className="company">Youtube</p>
+                <img src="https://www.freepnglogos.com/uploads/netflix-logo-circle-png-5.png" alt="" className="companylogo"/>
+                <p className="company">Netflix</p>
               </div>
             </div>
             <div id="Vimeo Pro" className="company1">
               <h5 className="rate">$2.99/m</h5>
               <div className="bottomcompany">
-                <img src="" alt="" className="companylogo"/>
+                <img src="https://www.4kshooters.net/wp-content/uploads/2017/02/Vimeo.png" alt="" className="companylogo"/>
                 <p className="company">Vimeo Pro</p>
               </div>
             </div>
             <div id="Spotify"className="company1">
               <h5 className="rate">$15.00/m</h5>
               <div className="bottomcompany">
-                <img src="" alt="" className="companylogo"/>
+                <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png" alt="" className="companylogo"/>
                 <p className="company">Spotify</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
        </div>
      </div>

@@ -8,7 +8,7 @@
     margin: 40px;
     width: 80%;
     height: 800px;
-    background: yellow;
+    background: rgb(240, 240, 240);
 }
 .leftcolumn{
     display: flex;
@@ -442,8 +442,7 @@ margin-top: 10px;
 .rightcolumn{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background: green;
+
     margin: 20px;
     width: 35%;
     border-radius: 20px;
@@ -453,8 +452,8 @@ margin-top: 10px;
  margin-right: 30px;
  display: flex;
  flex-direction: column;
- justify-content: space-around;
 
+height: 730px;
 }
 .rightnav{
     display: flex;
@@ -462,7 +461,7 @@ margin-top: 10px;
     margin-top: 35px;
 }
 .gear, .noti{
-    width: 15px;
+    width: 12px;
 }
 .reddot{
     width: 3px;
@@ -477,4 +476,152 @@ margin-top: 10px;
 }
 .settings{
     margin-right: 10px;
+}
+.reddot{
+    position: absolute;
+    width: 8px;
+    margin-top: -8px;
+}
+.righttop{
+    display: flex;
+    flex-direction: column;
+}
+.rightnav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+select{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: grey;
+    margin-top: 5px;
+}
+.expenses{
+    color: rgb(34, 75, 185);
+}
+.chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.pichart{
+    width: 150px;
+    margin-bottom: 15px;
+}
+.transport{
+    font-weight: 500;
+    margin-top: 6px;
+}
+.transportcost{
+    color: grey;
+    margin-top: 3px;
+}
+.sendmoney{
+    display: flex;
+    flex-direction: column;
+}
+.sendmoneynav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.people{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 13px;
+}
+.schedulednav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paymentcompanies{
+    display: flex;
+
+}
+.tophalfright{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bothalfright{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.sendmoneytitle{
+    color: rgb(34, 75, 185);
+    font-size: 20px;
+    
+}
+.pfp2{
+    width: 50px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.sendmoneynav{
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgb(34, 75, 185);
+}
+.plus{
+    background: transparent;
+    border: none;
+    display: flex;
+}
+.plussign{
+    width: 25px;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.firstname{
+    margin-top: 5px;
+    font-size: 15px;
+    color: grey;
+}
+.lastname{
+    margin-top: -3px;
+    font-size: 15px;
+    color: grey;
+}
+.sendmoneytitle2{
+    color: rgb(34, 75, 185);
+    font-size: 20px;
+}
+.schedulednav{
+    margin-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(34, 75, 185);
+}
+.arrowbot{
+    width: 15px;
+    margin-right: 1px;
+}
+.companylogo{
+    width: 30px;
+}
+.company1{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+#youtube{
+    background: red;
 }
