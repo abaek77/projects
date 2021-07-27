@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.App{
+    display: flex;
+    margin: 40px;
+    width: 80%;
+    height: 800px;
+    background: yellow;
+}
+.leftcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin: 20px;
+    width: 20%;
+    border-radius: 20px;
+}
+.Fundbatch{
+    display: flex;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.Fund{
+color: rgb(34, 75, 185);
+}
+.pfp{
+    width: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome{
+    font-size: 12px;
+    color: grey;
+    font-weight: 500;
+}
+.name{
+    color: rgb(34, 75, 185);
+    font-size: 16px;
+}
+.budget{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.monthly{
+    font-size: 15px;
+    color: grey;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+.money1{
+    font-size: 30px;
+}
+.piecon{
+    width: 17px;
+    height: 17px;
+    margin-right: 15px;
+}
+.nav{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dashdiv{
+    display: flex;
+    align-items: center;
+
+}
+.signdiv{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+.topleft{
+    height: 400px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+.Dashboard1{
+    font-size: 15px;
+    color: grey;
+}
+.Dashboardselect{
+    font-size: 15px;
+}
+.midcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 40%;
+    border-radius: 20px;
+
+}
+.search{
+
+display: flex;
+justify-content: space-between;
+width: 88%;
+background: white;
+padding: 10px;
+border-radius: 30px;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+.magnify{
+background: transparent;
+border: none;
+}
+.glass{
+    width: 15px;
+}
+
+.input1{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+}
+.width{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.dashy{
+    color: rgb(34, 75, 185);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.creditcard{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+.navcard{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightnavcard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cardtext, .switch{
+    margin-right: 10px;
+}
+.maincard{
+    margin-top: 18px;
+}
+.creditbalance{
+    font-size: 50px;
+}
+.botcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+}
+.botcardleft{
+    display: flex;
+}
+.creditnumber{
+    margin-left: 7px;
+}
+.asterisk{
+    margin-top: 3px;
+}
+.mastercard{
+    width: 40px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    margin-top: 0;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+}
+input:checked + .slider{
+    background-color: rgb(233, 233, 233);
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px white;
+}
+input:checked + .slider:before {
+    -webkit-transition: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before{
+    border-radius: 50%;
+}
+.cardtext{
+    font-size: 15px;
+    color: grey;
+    font-weight: 500;
+}
+.paymentlimit{
+margin-top: 10px;
+}
+.limitdesc{
+    display: flex;
+    justify-content: space-between;
+}
+.limittext2{
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+}
+.limittext{
+    color: grey;
+    font-size: 15px;
+    font-weight: 500;
+}
+.blue{
+    color: rgb(34, 75, 185);
+}
+.grey{
+    color: grey;
+}
+.greybar{
+    width: 100%;
+    height: 9px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+.bluebar{
+    width: 50%;
+    height: 9px;
+    background-color: rgb(34, 75, 185);
+    border-radius: 15px;
+}
+.bar{
+    margin-top: 10px;
+}
+.incomespendings{
+    display: flex;
+    margin-top: 20px;
+}
+.incometab{
+    display: flex;
+    width: 140px;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(233, 233, 233);
+    border-radius: 15px;
+    border: 1px solid rgb(180, 180, 180);
+}
+.incometab2{
+    display: flex;
+    width: 140px;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.arrow1{
+    width: 20px;
+    padding: 13px;
+}
+.arrow2{
+    width: 20px;
+    padding: 13px;
+    transform: rotate(180deg);
+}
+.rightincome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottommain{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.botmidtitle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    color: rgb(34, 75, 185);
+    font-size: 20px;
+}
+.midnav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.applenav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+.leftapplenav{
+    display: flex;
+    align-items: center;
+}
+.rightapplenav{
+    display: flex;
+    align-items: center;
+}
+.xboxcon{
+    width: 15px;
+    padding: 3px;
+}
+.xboxstorage3{
+    border-radius: 50%;
+    background: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: 3px;
+    background-size: 15px;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    background-image: url(https://www.freepnglogos.com/uploads/xbox-games-logo-symbol-19.png);
+    background-repeat: no-repeat;
+}
+.xboxstorage{
+    border-radius: 50%;
+    background: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: 3px;
+    background-size: 15px;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/862px-Apple_logo_black.svg.png);
+    background-repeat: no-repeat;
+}
+.xboxstorage2{
+    border-radius: 50%;
+    background: rgb(233, 233, 233);
+    margin-right: 10px;
+    padding: 3px;
+    background-size: 15px;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    background-image: url(https://cdn.worldvectorlogo.com/logos/amazon-icon.svg);
+    background-repeat: no-repeat;
+}
+.applecost{
+    margin-right: 10px;
+}
+.arrow{
+    background-image: url(https://static.thenounproject.com/png/1513337-200.png);
+    width: 15px;
+    height: 17px;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+.applestore{
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+}
+.rightcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: green;
+    margin: 20px;
+    width: 35%;
+    border-radius: 20px;
+}
+.width2{
+ margin-left: 30px;
+ margin-right: 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+
+}
+.rightnav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+.gear, .noti{
+    width: 15px;
+}
+.reddot{
+    width: 3px;
+}
+.settings, .notifications{
+    background: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+}
+.settings{
+    margin-right: 10px;
+}

@@ -5,58 +5,60 @@ function App() {
   return (
     <div className="App">
      <div className="leftcolumn">
+       <div className="topleft">
         <h1 className="Fundbatch"><div className="Fund">Fund</div><div className="batch">batch</div></h1>
         <div className="profile">
-          <img src="" alt="" className="pfp"/>
+          <img src="https://extranet.worldarchery.sport/ProfilePictures/?Id=30832" alt="" className="pfp"/>
           <p className="welcome">Welcome back</p>
-          <h3 className="name">Ronan Poolman</h3>
+          <h3 className="name">Kim Je Deok</h3>
         </div>
         <div className="budget">
-          <h2>$4,300</h2>
+          <h2 className="money1">$4,300</h2>
           <p className="monthly">Monthly budget</p>
+        </div>
         </div>
         <div className="nav">
           <nav className="navigation">
             <div className="dashdiv">
-              <img src="https://static.thenounproject.com/png/544-200.png" alt="piecon" className="piecon"/>
-              <h3 className="Dashboard1">Dashboard</h3>
+              <img src="https://static.thenounproject.com/png/544-200.png" alt="" className="piecon"/>
+              <h3 className="Dashboardselect">Dashboard</h3>
             </div>
-            <div className="investdiv">
-              <img src="" alt="graphcon" className="graphcon"/>
-              <h3 className="investments">Investments</h3>
+            <div className="dashdiv">
+              <img src="https://icons-for-free.com/iconfiles/png/512/graph+graph+growth+growth+graph+line+graph+icon+icon-1320086625366433865.png" alt="" className="piecon"/>
+              <h3 className="Dashboard1">Investments</h3>
             </div>
-            <div className="trandsdiv">
-              <img src="" alt="transcon" className="transcon"/>
-              <h3 className="transactions">Transaction</h3>
+            <div className="dashdiv">
+              <img src="https://www.montanaoutdoor.com/wp-content/uploads/2019/09/shoot-l-or-R.png" alt="" className="piecon"/>
+              <h3 className="Dashboard1">Transaction</h3>
             </div>
-            <div className="walldiv">
-              <img src="" alt="wallcon" className="wallcon"/>
-              <h3 className="wallet">Wallet</h3>
+            <div className="dashdiv">
+              <img src="https://img.icons8.com/ios/452/wallet--v1.png" alt="" className="piecon"/>
+              <h3 className="Dashboard1">Wallet</h3>
             </div>
           </nav>
           <div className="signdiv">
-            <img src="" alt="signcon" className="signcon"/>
-            <h3 className="signout">Sign-out</h3>
+            <img src="https://image.flaticon.com/icons/png/512/130/130925.png" alt="" className="piecon"/>
+            <h3 className="Dashboard1">Sign-out</h3>
           </div>
         </div>
      </div>
      <div className="midcolumn">
+       <div className="width">
         <div className="search">
-          <input type="text" placeholder="Search" />
-          <button className="magnify"></button>
+          <input className="input1"type="text" placeholder="Search" />
+          <button className="magnify"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png" alt="" className="glass"/></button>
         </div>
         <div className="dashboard">
           <h1 className="dashy">Dashboard</h1>
           <div className="creditcard">
             <div className="navcard">
-              <div className="leftnavcard">
                 <p className="cardtext">Account balance</p>
-              </div>
+
               <div className="rightnavcard">
                 <p className="cardtext">Credit</p>
                 <label className="switch">
                   <input type="checkbox" />
-                  <span className="onround"></span>
+                  <span className="slider round"></span>
                 </label>
               </div>
             </div>
@@ -68,9 +70,9 @@ function App() {
                 <h4 className="asterisk">****</h4>
                 <h4 className="creditnumber">4532</h4>
               </div>
-              <div className="botcardright">
-                <img src="" alt="mastercon" className="mastercard"/>
-              </div>
+
+                <img src="https://cdn.iconscout.com/icon/free/png-512/mastercard-1527460-1298290.png" alt="" className="mastercard"/>
+
             </div>
           </div>
           <div className="paymentlimit">
@@ -87,18 +89,22 @@ function App() {
           <div className="incomespendings">
             <div className="incometab">
               <div className="leftincome">
-                <div className="coolarrowtab"></div>
+                <div className="coolarrowtab">
+                  <img className="arrow1"src="https://image.flaticon.com/icons/png/512/60/60611.png" alt="" />
+                </div>
               </div>
               <div className="rightincome">
                 <p className="incometext">Income</p>
                 <h3 className="incomecost">$5,700</h3>
               </div>
             </div>
-            <div className="spendingstab">
-              <div className="leftspendings">
-                <div className="coolarrow2"></div>
+            <div className="incometab2">
+              <div className="leftincome">
+                <div className="coolarrow2">
+                  <img className="arrow2"src="https://image.flaticon.com/icons/png/512/60/60611.png" alt="" />
+                </div>
               </div>
-              <div className="rightspendings">
+              <div className="rightincome">
                 <p className="incometext">Spendings</p>
                 <h3 className="incomecost">$2,254</h3>
               </div>
@@ -109,8 +115,8 @@ function App() {
             <div className="midnav">
               <div className="applenav">
                 <div className="leftapplenav">
-                <img src="" alt="" className="applecon"/>
-                <h4 className="applestore">Apple Store</h4>
+                <div className="xboxstorage"></div>
+                  <h4 className="applestore">Apple Store</h4>
                 </div>
                 <div className="rightapplenav">
                   <h4 className="applecost">- $32.50</h4>
@@ -119,17 +125,17 @@ function App() {
               </div>
               <div className="applenav">
                 <div className="leftapplenav">
-                <img src="" alt="" className="xboxcon"/>
-                <h4 className="applestore">Amazon</h4>
+                  <div className="xboxstorage2"></div>
+                  <h4 className="applestore">Amazon</h4>
                 </div>
                 <div className="rightapplenav">
                   <h4 className="applecost">- $4.20</h4>
                   <button className="arrow"></button>
                 </div>
               </div>
-              <div className="applnav">
+              <div className="applenav">
                 <div className="leftapplenav">
-                <img src="" alt="" className="xboxcon"/>
+                  <div className="xboxstorage3"></div>
                 <h4 className="applestore">Xbox</h4>
                 </div>
                 <div className="rightapplenav">
@@ -140,11 +146,14 @@ function App() {
             </div>
           </div>
         </div>
+        </div>
      </div>
+
      <div className="rightcolumn">
+       <div className="width2">
        <div className="rightnav">
-         <button className="settings"></button>
-         <button className="notifications"><img src="" alt="" className="reddot" /></button>
+         <button className="settings"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png" alt="" className="gear"/></button>
+         <button className="notifications"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Basic_red_dot.png" className="reddot" alt="" /><img src="https://img.icons8.com/ios/452/appointment-reminders--v1.png" alt="" className="noti" /> </button>
        </div>
        <div className="chart">
          <img src="" alt="" className="pichart"/>
@@ -215,6 +224,7 @@ function App() {
               <div className="bottomcompany">
                 <img src="" alt="" className="companylogo"/>
                 <p className="company">Spotify</p>
+                </div>
               </div>
             </div>
           </div>
