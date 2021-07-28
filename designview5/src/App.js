@@ -167,13 +167,13 @@ function App() {
          <img src="https://cdn.fastly.picmonkey.com/content4/previews/infographic_one/infographic_one_14_384.png" alt="" className="pichart"/>
          <div className="itemsofchart">
            <ul className="blackdot">
-             <li ><div className="transport">Transport</div><div className="transportcost">$120.20</div></li>
+             <li className="oneone" ><span><div className="transport">Transport</div><div className="transportcost">$120.20</div></span></li>
             </ul> 
             <ul className="yellowdot">
-             <li ><div className="transport">Onlineshopping</div><div className="transportcost">$1,200.00</div></li>
+             <li className="twotwo"><span><div className="transport">Onlineshopping</div><div className="transportcost">$1,200.00</div></span></li>
              </ul> 
              <ul className="bluedot">
-             <li ><div className="transport">Restaurant</div><div className="transportcost">$250.40</div></li>
+             <li className="threethree"><span><div className="transport">Restaurant</div><div className="transportcost">$250.40</div></span></li>
            </ul>
          </div>
        </div>
@@ -216,18 +216,18 @@ function App() {
             <div id="youtube"className="company1">
               <h5 className="rate">$3.99/m</h5>
               <div className="bottomcompany">
-                <img src="https://clipart.info/images/ccovers/1590430652red-youtube-logo-png-xl.png" alt="" className="companylogo"/>
+                <img src="https://1000logos.net/wp-content/uploads/2017/05/youtube-symbol.jpg" alt="" className="companylogo"/>
                 <p className="company">Youtube</p>
               </div>
             </div>
-            <div id="Ended Sound"className="company1">
+            <div id="netflix"className="company1">
               <h5 className="rate">$5.99/m</h5>
               <div className="bottomcompany">
                 <img src="https://www.freepnglogos.com/uploads/netflix-logo-circle-png-5.png" alt="" className="companylogo"/>
                 <p className="company">Netflix</p>
               </div>
             </div>
-            <div id="Vimeo Pro" className="company1">
+            <div id="Vimeo" className="company1">
               <h5 className="rate">$2.99/m</h5>
               <div className="bottomcompany">
                 <img src="https://www.4kshooters.net/wp-content/uploads/2017/02/Vimeo.png" alt="" className="companylogo"/>

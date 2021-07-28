@@ -8,7 +8,8 @@
     margin: 40px;
     width: 80%;
     height: 800px;
-    background: rgb(240, 240, 240);
+    background: #ECEEEE;
+    border-radius: 20px;
 }
 .leftcolumn{
     display: flex;
@@ -26,7 +27,7 @@
     margin-top: 15px;
 }
 .Fund{
-color: rgb(34, 75, 185);
+color: #41688F;
 }
 .pfp{
     width: 60px;
@@ -45,7 +46,7 @@ color: rgb(34, 75, 185);
     font-weight: 500;
 }
 .name{
-    color: rgb(34, 75, 185);
+    color: #41688F;
     font-size: 16px;
 }
 .budget{
@@ -161,7 +162,7 @@ border: none;
     
 }
 .dashy{
-    color: rgb(34, 75, 185);
+    color: #41688F;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -230,7 +231,7 @@ border: none;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2196F3;
+    background-color: #41688F;
     -webkit-transition: .4s;
     transition: .4s;
     
@@ -288,7 +289,7 @@ margin-top: 10px;
     font-weight: 500;
 }
 .blue{
-    color: rgb(34, 75, 185);
+    color: #41688F;
 }
 .grey{
     color: grey;
@@ -302,7 +303,7 @@ margin-top: 10px;
 .bluebar{
     width: 50%;
     height: 9px;
-    background-color: rgb(34, 75, 185);
+    background-color: #41688F;
     border-radius: 15px;
 }
 .bar{
@@ -320,7 +321,7 @@ margin-top: 10px;
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: rgb(233, 233, 233);
+    background: #ECEEEE;
     border-radius: 15px;
     border: 1px solid rgb(180, 180, 180);
 }
@@ -338,11 +339,21 @@ margin-top: 10px;
 }
 .arrow1{
     width: 20px;
-    padding: 13px;
+    padding: 7px;
+ 
 }
+.coolarrowtab, .coolarrow2{
+    margin: 6px;
+    border-radius: 50%;
+   border-bottom: 3px solid black;
+   border-right: 3px solid black;
+   border-top: 0;
+}
+
 .arrow2{
     width: 20px;
-    padding: 13px;
+    padding: 7px;
+    
     transform: rotate(180deg);
 }
 .rightincome{
@@ -358,8 +369,8 @@ margin-top: 10px;
 .botmidtitle{
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgb(180, 180, 180);
-    color: rgb(34, 75, 185);
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: #41688F;
     font-size: 20px;
 }
 .midnav{
@@ -388,7 +399,7 @@ margin-top: 10px;
 }
 .xboxstorage3{
     border-radius: 50%;
-    background: rgb(233, 233, 233);
+    background: transparent;
     margin-right: 10px;
     padding: 3px;
     background-size: 15px;
@@ -400,7 +411,7 @@ margin-top: 10px;
 }
 .xboxstorage{
     border-radius: 50%;
-    background: rgb(233, 233, 233);
+    background: transparent;
     margin-right: 10px;
     padding: 3px;
     background-size: 15px;
@@ -412,7 +423,7 @@ margin-top: 10px;
 }
 .xboxstorage2{
     border-radius: 50%;
-    background: rgb(233, 233, 233);
+    background: transparent;
     margin-right: 10px;
     padding: 3px;
     background-size: 15px;
@@ -500,7 +511,7 @@ select{
     margin-top: 5px;
 }
 .expenses{
-    color: rgb(34, 75, 185);
+    color: #41688F;
 }
 .chart{
     display: flex;
@@ -556,7 +567,7 @@ select{
     margin-top: 5px;
 }
 .sendmoneytitle{
-    color: rgb(34, 75, 185);
+    color: #41688F;
     font-size: 20px;
     
 }
@@ -567,7 +578,7 @@ select{
 }
 .sendmoneynav{
     padding-bottom: 11px;
-    border-bottom: 1px solid rgb(34, 75, 185);
+    border-bottom: 1px solid rgb(219, 219, 219);
 }
 .plus{
     background: transparent;
@@ -594,13 +605,13 @@ select{
     color: grey;
 }
 .sendmoneytitle2{
-    color: rgb(34, 75, 185);
+    color: #41688F;
     font-size: 20px;
 }
 .schedulednav{
     margin-top: 12px;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgb(34, 75, 185);
+    border-bottom: 1px solid rgb(219, 219, 219);
 }
 .arrowbot{
     width: 15px;
@@ -610,7 +621,7 @@ select{
     width: 30px;
 }
 .company1{
-
+    width: 200px;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -623,5 +634,41 @@ select{
     border-radius: 20px;
 }
 #youtube{
-    background: red;
+    background: #FF0000;
+}
+#netflix{
+    background: black;
+}
+#Vimeo{
+    background: #19B7EA;
+}
+#Spotify{
+    background: #1DB954;
+}
+.rate{
+    color: white;
+}
+.company{
+    color: white;
+}
+ul li span{
+    color: black;
+}
+ul .oneone {
+    color: black;
+}
+ul .twotwo{
+    color: yellow;
+}
+ul .threethree{
+    color: blue;
+}
+li{
+    font-size: 25px;
+    margin-top: -3px;
+}
+li span {
+    font-size: 15px;
+    position: relative;
+
 }
