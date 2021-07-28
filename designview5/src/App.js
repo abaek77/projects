@@ -101,7 +101,9 @@ function App() {
             <div className="incometab2">
               <div className="leftincome">
                 <div className="coolarrow2">
+                  <div className="coolrow">
                   <img className="arrow2"src="https://image.flaticon.com/icons/png/512/60/60611.png" alt="" />
+                  </div>
                 </div>
               </div>
               <div className="rightincome">
