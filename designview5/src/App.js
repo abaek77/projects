@@ -241,7 +241,7 @@ function App() {
               <div className="bottomcompany">
                 <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png" alt="" className="companylogo"/>
                 <p className="company">Spotify</p>
-                </div>
+            </div>
               </div>
             </div>
           </div>
