@@ -1,0 +1,60 @@
+.righttop{
+    display: flex;
+    flex-direction: column;
+}
+.rightnav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+select{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: grey;
+    margin-top: 5px;
+}
+.expenses{
+    color: #41688F;
+}
+.chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 9px;
+}
+.pichart{
+    width: 150px;
+    margin-bottom: 15px;
+}
+.transport{
+    font-weight: 500;
+    margin-top: 6px;
+}
+.transportcost{
+    color: grey;
+    margin-top: 3px;
+}
+ul li span{
+    color: black;
+}
+ul .oneone {
+    color: black;
+}
+ul .twotwo{
+    color: yellow;
+}
+ul .threethree{
+    color: blue;
+}
+li{
+    font-size: 25px;
+    margin-top: -3px;
+}
+li span {
+    font-size: 15px;
+    position: relative;
+
+}

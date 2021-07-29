@@ -1,0 +1,46 @@
+.rightnav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+.gear, .noti{
+    width: 12px;
+}
+
+.reddot{
+    width: 3px;
+}
+.settings, .notifications{
+    background: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.settings{
+    margin-right: 10px;
+}
+.notifications {
+	background: transparent;
+	border: none;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: white;
+	position: relative;
+}
+
+.notifications::before {
+	content: '';
+	position: absolute;
+	right: 0%;
+	top: 10%;
+	transform: translate(-50%, -50%);
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: red;
+	z-index: 9999;
+}
