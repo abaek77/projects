@@ -8,16 +8,16 @@ import Dashboard from './pages/Dashboard';
 import Signout from './pages/Signout';
 
 
-function App () {
-    return(
+function App() {
+    return (
         <div className="App">
             <Router>
-            <Route exact path="/"><Redirect to="/Dashboard"/></Route>
-            <Route path="/Dashboard" component= {Dashboard}></Route>
-            <Route path="/Investments" component={Investments}></Route>
-            <Route path="/Transaction" component={Transaction}></Route>
-            <Route path="/Wallet" component={Wallet}></Route>
-            <Route path="/Signout" component={Signout}></Route>
+                <Route exact path="/"><Redirect to="/Dashboard" /></Route>
+                <Route path="/Dashboard" component={Dashboard}></Route>
+                <Route path="/Investments" component={Investments}></Route>
+                <Route path="/Transaction" component={Transaction}></Route>
+                <Route path="/Wallet" component={Wallet}></Route>
+                <Route path="/Signout" component={Signout}></Route>
             </Router>
 
         </div>
