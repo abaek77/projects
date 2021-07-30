@@ -1,5 +1,5 @@
 import React from 'react';
-import LeftBar from './Components/LeftBar/LeftBar';
+import LeftBar from '../Components/LeftBar/LeftBar';
 
 function Investments () {
     return(

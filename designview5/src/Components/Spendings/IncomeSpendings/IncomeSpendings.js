@@ -4,7 +4,7 @@ import LatestSpendings from '../LatestSpendings/LatestSpendings';
 
 function IncomeSpendings () {
 
-
+    
 
 
 

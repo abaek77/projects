@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css'
-import Transaction from './Transaction';
-import Wallet from './Wallet';
-import Investments from './Investments'
-import Dashboard from './Dashboard';
-import Signout from './Signout';
+import Transaction from './pages/Transaction';
+import Wallet from './pages/Wallet';
+import Investments from './pages/Investments'
+import Dashboard from './pages/Dashboard';
+import Signout from './pages/Signout';
 
 
 function App () {
