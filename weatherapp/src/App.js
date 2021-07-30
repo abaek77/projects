@@ -49,7 +49,7 @@ function App() {
             <div className="weather">{weather.weather[0].main}</div>
           </div>
         </div>
-      ) : ("")}
+      ) : ("XD")}
     </div>
 
 
