@@ -37,21 +37,21 @@
     background-color: #27b6ee;
     border: 2px solid black;
 }
-.bottom_app{
+.bottom-app{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 650px;
     align-items: center;
 }
-.locationtab{
+.bottom-app__location{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     height: 100px;
 }
-.weather_display{
+.bottom-app__weather-display{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +59,7 @@
     height: 700px;
 
 }
-input{
+.searchtab__input{
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 70%;
@@ -88,14 +88,14 @@ input{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-.Location{
+.bottom-app__location{
     font-size: 32px;
     font-weight: 500;
     color: white;
     text-shadow: 3px 3px rgba(50, 50, 70, .5);
     font-style: italic;
 }
-.temperature{
+.bottom-app__temperature{
     font-size: 72px;
     font-weight: 500;
     color: white;
@@ -103,7 +103,7 @@ input{
     text-align: center;
     
 }
-.temp_box{
+.bottom-app__tempbox{
     background: white;
     padding: 10px;
     border-radius: 20px;
@@ -113,12 +113,12 @@ input{
     background-color: rgba(255, 255, 255, .3);
     box-shadow: 3px 5px rgba(0, 0, 0, .2);
 }
-.weather{
+.bottom-app__weather{
     font-size: 32px;
     font-weight: 500;
     color: white;
     text-shadow: 3px 3px rgba(50, 50, 70, .5);
 }
-.icon{
+.bottom-app__icon{
     width: 100px;
 }
