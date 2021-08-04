@@ -5,7 +5,6 @@ import './App.css'
 function Time({ minutes, hours }) {
     const [currentTime, setCurrentTime] = useState("")
     useEffect(() => {
-
         const interval = setInterval(() => {
             if (hours === 0) {
                 if (minutes < 10) {
@@ -29,9 +28,12 @@ function Time({ minutes, hours }) {
                 }
                 setCurrentTime(hours + ':' + minutes)
             }
-        }, 10000);
-        return () => clearInterval(interval)
+            return (currentTime);
+        }, 1000)
+        return () => clearInterval(interval);
     })
+
+
 
     return (<div data-testid="time" className="date">Time: {currentTime}</div>)
 
