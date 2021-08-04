@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react'
-import { useEffect } from 'react';
+
+import Time from './Time'
 
 const api = {
   key: "4fe97ec35e46949cbed63649678a69c0",
@@ -26,26 +27,6 @@ function App() {
         })
     }
   }
-  const [currentTime, setCurrentTime] = useState("")
-  useEffect(() => {
-
-
-
-    if (today.getHours() >= 12) {
-      if (today.getMinutes() <= 10) {
-        setCurrentTime(today.getHours() - 12 + ":" + 0 + today.getMinutes())
-      }
-      else {
-        setCurrentTime(today.getHours() - 12 + ":" + today.getMinutes())
-      }
-    }
-    else {
-      if (today.getMinutes <= 10) {
-        setCurrentTime(today.getHours() + ":" + 0 + today.getMinutes())
-      }
-      setCurrentTime(today.getHours() + ':' + today.getMinutes())
-    }
-  }, []);
 
 
   return (
@@ -58,7 +39,7 @@ function App() {
     }>
       <div className="searchtab">
         <input type="text" placeholder="Search" value={input} onChange={({ target: { value } }) => setInput(value)} onKeyPress={search} />
-        <div className="date">Time: {currentTime}</div>
+        <Time />
       </div>
       {(typeof weather.main != "undefined") ? (
         <div className="bottom_app">
