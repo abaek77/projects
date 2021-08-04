@@ -29,7 +29,7 @@ function App() {
 
 
   return (
-    <div className={
+    <div data-testid="App" className={
       (typeof weather.main != "undefined")
         ? ((hours > 6 && hours < 18)
           ? "day"
@@ -38,7 +38,7 @@ function App() {
     }>
       <div className="searchtab">
         <input className="searchtab__input" type="text" placeholder="Search" value={input} onChange={({ target: { value } }) => setInput(value)} onKeyPress={search} />
-        <Time minutes={minutes} hours={hours} />
+        <div data-testid="time" className="date"><Time /></div>
       </div>
       {(typeof weather.main != "undefined") && (
         <div className="bottom-app">
@@ -53,7 +53,7 @@ function App() {
               : <img className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/2996/2996063.png" />
             }
             <div className="bottom-app__weather">{weather.weather[0].main}</div>
-            {(weather.weather[0].main === "Clear") ? <img className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/169/169367.png" /> : (weather.weather[0].main === "Rain") ? <img className="icon" src="https://icon-library.com/images/rain-icon-png/rain-icon-png-2.jpg" /> : <img className="icon" src="https://cdn.iconscout.com/icon/free/png-512/cloudy-cloud-snow-weather-38920.png" />}
+            {(weather.weather[0].main === "Clear") ? <img className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/169/169367.png" /> : (weather.weather[0].main === "Rain") ? <img className="bottom-app__icon" src="https://icon-library.com/images/rain-icon-png/rain-icon-png-2.jpg" /> : <img className="bottom-app__icon" src="https://cdn.iconscout.com/icon/free/png-512/cloudy-cloud-snow-weather-38920.png" />}
             <div className="bottom-app__spacing"></div>
           </div>
         </div>

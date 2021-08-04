@@ -12,3 +12,9 @@ test('should render correct current time', () => {
     const time = screen.getByTestId('time')
     expect(time).toHaveTextContent("12:17")
 })
+
+test('should display correct place', () => {
+    render(<App />);
+    const place = screen.getByTestId('App')
+    expect(place).toHaveTextContent("")
+})

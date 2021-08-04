@@ -2,33 +2,16 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 
 
-function Time({ minutes, hours }) {
+const options = {
+    hour: 'numeric',
+    minute: '2-digit'
+};
+
+function Time() {
     const [currentTime, setCurrentTime] = useState("")
     useEffect(() => {
         const interval = setInterval(() => {
-            if (hours === 0) {
-                if (minutes < 10) {
-                    setCurrentTime(hours + 12 + ":" + minutes.padStart(2, 0))
-                }
-                else {
-                    setCurrentTime(hours + 12 + ":" + minutes)
-                }
-            }
-            else if (hours > 13) {
-                if (minutes < 10) {
-                    setCurrentTime(hours - 12 + ":" + minutes.padStart(2, 0))
-                }
-                else {
-                    setCurrentTime(hours - 12 + ":" + minutes)
-                }
-            }
-            else {
-                if (minutes < 10) {
-                    setCurrentTime(hours + ":" + minutes.padStart(2, 0))
-                }
-                setCurrentTime(hours + ':' + minutes)
-            }
-            return (currentTime);
+            setCurrentTime(Intl.DateTimeFormat('en-US', options).format(new Date()))
         }, 1000)
         return () => clearInterval(interval);
     })
