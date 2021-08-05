@@ -5,10 +5,10 @@ import './App.css';
 function List({ setTodos, todos }) {
     return (
         <div className="list">
-            <ol>{
+            <ul>{
                 todos.map((todo) => <Item todos={todos} setTodos={setTodos} todo={todo} />)
             }
-            </ol>
+            </ul>
         </div>
     );
 }
