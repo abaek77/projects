@@ -14,7 +14,6 @@ function App() {
 
   const currentDate = new Date()
   const hours = currentDate.getHours();
-  const minutes = currentDate.getMinutes();
 
   const search = (e) => {
     if (e.key === "Enter") {
@@ -37,8 +36,8 @@ function App() {
         : "App"
     }>
       <div className="searchtab">
-        <input className="searchtab__input" type="text" placeholder="Search" value={input} onChange={({ target: { value } }) => setInput(value)} onKeyPress={search} />
-        <div data-testid="time" className="date"><Time /></div>
+        <input data-testid="search_input" className="searchtab__input" type="text" placeholder="Search..." value={input} onChange={({ target: { value } }) => setInput(value)} onKeyPress={search} />
+        <Time />
       </div>
       {(typeof weather.main != "undefined") && (
         <div className="bottom-app">
