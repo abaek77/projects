@@ -30,12 +30,5 @@ describe("TodoList testing", () => {
         expect(todoinput).toContain("walk the dog")
     })
 
-    test('adding element to list should show the element in the list', async () => {
 
-        const { getByTestId, container } = render(<List />)
-
-        const list = container.querySelector("List")
-
-        expect(list).toHaveTextContent("walk the dog")
-    })
 })
