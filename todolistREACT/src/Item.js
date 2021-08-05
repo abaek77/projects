@@ -2,18 +2,19 @@ import React from 'react';
 import './App.css';
 
 
-function Item({text, setTodos, todo}){
+function Item({ text, setTodos, todo }) {
 
-    function deleteListItem () {
-        console.log({todo})
+    function deleteListItem() {
+        console.log({ todo })
         setTodos(previousState => previousState.filter((todoitem) => todoitem.id !== todo.id))
     }
 
-    return(
+    return (
         <div className="item">
-        <li>{todo.text}</li>
-        <button onClick = {deleteListItem}>Complete</button>
-    </div>
+            <li>{todo.text}</li>
+            <button onClick={deleteListItem}>Complete</button>
+
+        </div>
     );
 
 };
