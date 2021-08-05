@@ -48,11 +48,15 @@ function App() {
             <div className="bottom-app__tempbox">
               <div className="bottom-app__temperature">{Math.round(weather.main.temp)}°C</div>
             </div>
-            {(Math.round(weather.main.temp) > 16) ? <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/FireIcon.svg/1501px-FireIcon.svg.png" className="bottom-app__icon" />
-              : <img className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/2996/2996063.png" />
+            {(Math.round(weather.main.temp) > 16) ? <img data-testid="bottom-app__temperatureIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/FireIcon.svg/1501px-FireIcon.svg.png" className="bottom-app__icon" />
+              : <img data-testid="bottom-app__temperatureIcon"  className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/2996/2996063.png" />
             }
             <div className="bottom-app__weather">{weather.weather[0].main}</div>
-            {(weather.weather[0].main === "Clear") ? <img className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/169/169367.png" /> : (weather.weather[0].main === "Rain") ? <img className="bottom-app__icon" src="https://icon-library.com/images/rain-icon-png/rain-icon-png-2.jpg" /> : <img className="bottom-app__icon" src="https://cdn.iconscout.com/icon/free/png-512/cloudy-cloud-snow-weather-38920.png" />}
+            {(weather.weather[0].main === "Clear") ?
+              <img data-testid="bottom-app__weatherIcon" className="bottom-app__icon" src="https://image.flaticon.com/icons/png/512/169/169367.png" />
+              : (weather.weather[0].main === "Rain") ?
+                <img data-testid="bottom-app__weatherIcon" className="bottom-app__icon" src="https://icon-library.com/images/rain-icon-png/rain-icon-png-2.jpg" /> :
+                <img data-testid="bottom-app__weatherIcon" className="bottom-app__icon" src="https://cdn.iconscout.com/icon/free/png-512/cloudy-cloud-snow-weather-38920.png" />}
             <div className="bottom-app__spacing"></div>
           </div>
         </div>

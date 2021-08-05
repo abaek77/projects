@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 
 
-const options = {
+export const options = {
     hour: 'numeric',
     minute: '2-digit'
 };
