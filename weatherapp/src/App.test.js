@@ -1,4 +1,4 @@
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen, cleanup, getByTestId, fireEvent } from "@testing-library/react";
 import App from './App';
 import Time from './Time'
 
@@ -24,7 +24,11 @@ test('input should have a class', () => {
 })
 
 test('hours should be less than 24', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find())
-
+    const currentDate = new Date()
+    const hours = currentDate.getHours();
+    expect(hours).toBeLessThan(24)
 })
+
+const importData = jest.fn()
+
+test()
