@@ -2,10 +2,9 @@ import React from 'react';
 import './App.css';
 
 
-function Item({ text, setTodos, todo }) {
+function Item({ setTodos, todo }) {
 
     function deleteListItem() {
-        console.log({ todo })
         setTodos(previousState => previousState.filter((todoitem) => todoitem.id !== todo.id))
     }
 

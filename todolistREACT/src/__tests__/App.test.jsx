@@ -1,34 +1,25 @@
-import App, { setTodos } from '../App'
-import Form, { todoinput } from '../Form'
-import Item from '../Item'
-import List from '../List'
-import { getByTestId, render, fireEvent, act } from '@testing-library/react'
-import React, { useState } from 'react'
-
-
-
-const waitOneSecond = async () => await new Promise((r) => setTimeout(r, 1000))
+import App from '../App'
+import {act, fireEvent, getByTestId, render} from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect';
+import React from 'react'
 
 describe("TodoList testing", () => {
 
+	test("changing input should change value of imput element", () => {
+		const {getByTestId, getByText} = render(<App/>)
+		const inputField = getByTestId("todo-input")
+		const button = getByTestId("todo-button")
+		const taskValue = "walk"
 
-    test('changing input should change value of imput element', async () => {
+		act(() => {
+			fireEvent.change(inputField, {target: {value: taskValue}})
+		})
+		fireEvent.click(button)
 
-        const { getByTestId } = render(<Form setTodos={setTodos} />)
+		const task = getByText(taskValue);
 
-        const inputField = getByTestId("todo-input")
-        const button = getByTestId("todo-button")
-
-        act(() => {
-            fireEvent.change(inputField, { target: { value: "walk the dog" } })
-            fireEvent.click(button)
-        })
-
-
-        await waitOneSecond();
-
-        expect(todoinput).toContain("walk the dog")
-    })
+		expect(task).toBeInTheDocument();
+	})
 
 
 })
